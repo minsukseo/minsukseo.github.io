@@ -53,6 +53,13 @@
             color: #000;
         }
 
+        .sidebar h1 {
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
         .subtitle {
             font-size: 1.1rem;
             color: #333;
@@ -144,10 +151,13 @@
             padding: 0;
             border-left: none;
             margin-top: 0;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         .contact-item {
-            margin-bottom: 15px;
+            margin-bottom: 0;
         }
 
         .contact-item a {
@@ -196,6 +206,10 @@
             .skills-container {
                 grid-template-columns: 1fr;
             }
+
+            .contact-info {
+                flex-direction: row;
+            }
         }
 
         @media (max-width: 600px) {
@@ -210,6 +224,11 @@
             h1 {
                 font-size: 1.8rem;
             }
+
+            .contact-info {
+                flex-direction: row;
+                gap: 10px;
+            }
         }
     </style>
 </head>
@@ -217,6 +236,8 @@
     <div class="wrapper">
         <!-- Sidebar -->
         <aside class="sidebar">
+            <h1>Minsuk Seo</h1>
+            
             <section id="contact">
                 <h2>Contact</h2>
                 <div class="contact-info">
@@ -237,7 +258,6 @@
         <div class="main-content">
             <!-- Header -->
             <header>
-                <h1>Minsuk Seo</h1>
                 <p class="subtitle">PhD Researcher & Postdoctoral Scholar in Materials Science</p>
             </header>
 
