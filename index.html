@@ -103,11 +103,6 @@
             margin-bottom: 10px;
         }
 
-        .organization-name {
-            font-weight: 700;
-            color: #000;
-        }
-
         .description {
             color: #333;
             line-height: 1.7;
@@ -196,6 +191,15 @@
             opacity: 0.7;
         }
 
+        .nif-link {
+            color: #0066cc;
+            border-bottom: none;
+        }
+
+        .nif-link:hover {
+            opacity: 0.7;
+        }
+
         @media (max-width: 900px) {
             .wrapper {
                 flex-direction: column;
@@ -274,7 +278,7 @@
             <!-- About Section (without title) -->
             <section id="about">
                 <div class="about-text">
-                    <p>I am a postdoctoral researcher at the <span class="organization-name">University of Illinois Urbana-Champaign (UIUC)</span> in the <span class="organization-name">Materials Science and Engineering department</span>, formerly at <span class="organization-name">Lawrence Livermore National Laboratory</span>. I hold a PhD in Nuclear Engineering from Penn State University, where I conducted experimental research on advanced materials characterization.</p>
+                    <p>I am a postdoctoral researcher at the University of Illinois Urbana-Champaign (UIUC) in the Materials Science and Engineering department, formerly at Lawrence Livermore National Laboratory. I hold a PhD in Nuclear Engineering from Penn State University, where I conducted experimental research on advanced materials characterization.</p>
                     <p style="margin-top: 15px;">My research focuses on understanding the structure and properties of two-dimensional materials using advanced analytical techniques. I have extensive experience with electron microscopy and surface analysis methods, with a strong background in both experimental design and data analysis.</p>
                 </div>
             </section>
@@ -285,28 +289,27 @@
 
                 <div class="project-item">
                     <div class="project-title">High Entropy Alloy Design and Metastable Structures</div>
-                    <div class="project-meta"><span class="organization-name">University of Illinois Urbana-Champaign (UIUC)</span>, <span class="organization-name">Materials Science and Engineering Department</span>, 2026 - Present</div>
+                    <div class="project-meta">University of Illinois Urbana-Champaign (UIUC), Materials Science and Engineering Department, 2026 - Present</div>
+                    <div style="margin-top: 12px;">
+                        <a href="https://lasers.llnl.gov/about/keys-to-success/targets" target="_blank" class="nif-link">National Ignition Facility Target Fabrication</a>, 2025
+                    </div>
                 </div>
 
                 <div class="project-item">
                     <div class="project-title">Advanced Materials Characterization and Two-Dimensional Materials</div>
-                    <div class="project-meta"><span class="organization-name">Lawrence Livermore National Laboratory (LLNL)</span>, <span class="organization-name">Materials Science Division</span>, 2022 - 2025</div>
-                    <div class="description">Conducted LDRD (Lab Directed Research and Development) project in collaboration with group of Prof. Steven Chu at <span class="organization-name">Stanford University</span> on advanced materials characterization and two-dimensional materials research.
+                    <div class="project-meta">Lawrence Livermore National Laboratory (LLNL), Materials Science Division, 2022 - 2025</div>
+                    <div class="description">Conducted LDRD (Lab Directed Research and Development) project in collaboration with group of Prof. Steven Chu at Stanford University on advanced materials characterization and two-dimensional materials research.
                     <div style="margin-top: 12px;">
+                        <div class="publication-item">
+                            <a href="https://doi.org/10.1021/acsami.5c25472" target="_blank"><span class="publication-title">Dynamics of Radiation Damage Buildup in Ultrathin Hexagonal Boron Nitride Films under Ion Bombardment</span></a><br>
+                            <span class="publication-journal">ACS Applied Materials & Interfaces, 2026</span>
+                        </div>
                         <div class="publication-item">
                             <a href="https://doi.org/10.1016/j.scriptamat.2025.116756" target="_blank"><span class="publication-title">Two-dimensional hexagonal boron nitride nanosheets: synthesis and characterization</span></a><br>
                             <span class="publication-journal">Scripta Materialia, 2025</span>
                         </div>
-                        <div class="publication-item">
-                            <a href="https://doi.org/10.1021/acsami.5c25472" target="_blank"><span class="publication-title">Atomic-Scale Imaging of Hexagonal Boron Nitride</span></a><br>
-                            <span class="publication-journal">ACS Applied Materials & Interfaces, 2025</span>
-                        </div>
                     </div>
                     </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta"><a href="https://lasers.llnl.gov/about/keys-to-success/targets" target="_blank">National Ignition Facility Target Fabrication</a>, 2025</div>
                 </div>
             </section>
 
