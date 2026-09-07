@@ -158,9 +158,29 @@
             margin-bottom: 5px;
         }
 
-        .contact-value {
-            color: #333;
+        .contact-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
             font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background-color: #000;
+            color: white;
         }
 
         a {
@@ -169,7 +189,7 @@
             border-bottom: 1px solid #000;
         }
 
-        a:hover {
+        a:not(.contact-link):hover {
             opacity: 0.7;
         }
 
@@ -227,16 +247,12 @@
                 <h2>Contact</h2>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <span class="contact-label">Email</span>
-                        <span class="contact-value"><a href="mailto:msseo@illinois.edu">msseo@illinois.edu</a></span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">LinkedIn</span>
-                        <span class="contact-value"><a href="https://www.linkedin.com/in/minsukseo/" target="_blank">linkedin.com/in/minsukseo</a></span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">GitHub</span>
-                        <span class="contact-value"><a href="https://github.com/minsukseo" target="_blank">github.com/minsukseo</a></span>
+                        <span class="contact-label">Get in touch</span>
+                        <div class="contact-links">
+                            <a href="mailto:msseo@illinois.edu" class="contact-link" title="Email">✉</a>
+                            <a href="https://www.linkedin.com/in/minsukseo/" target="_blank" class="contact-link" title="LinkedIn">in</a>
+                            <a href="https://github.com/minsukseo" target="_blank" class="contact-link" title="GitHub">⚡</a>
+                        </div>
                     </div>
                 </div>
             </section>
