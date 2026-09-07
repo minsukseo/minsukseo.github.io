@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minsuk Seo</title>
+    <title>Minsuk Seo - Materials Science Researcher</title>
     <style>
         * {
             margin: 0;
@@ -13,21 +13,250 @@
 
         body {
             background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            color: #000;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 60px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 40px;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
             color: #333;
-            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #000;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        .about-text {
+            margin-bottom: 30px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .experience-item {
+            margin-bottom: 35px;
+        }
+
+        .position {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .organization {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 3px;
+        }
+
+        .period {
+            font-size: 0.95rem;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .skill-category {
+            background-color: #fafafa;
+            padding: 20px;
+            border-left: 3px solid #000;
+        }
+
+        .skill-category h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .skill-category p {
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            background-color: #fafafa;
+            padding: 30px;
+            border-left: 3px solid #000;
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            margin-bottom: 15px;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: #000;
+            display: inline-block;
+            width: 80px;
+        }
+
+        .contact-value {
+            color: #333;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1px solid #000;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Minsuk Seo</h1>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Minsuk Seo</h1>
+            <p class="subtitle">PhD Researcher & Postdoctoral Scholar in Materials Science</p>
+        </header>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About</h2>
+            <div class="about-text">
+                <p>I am a postdoctoral researcher at the University of Illinois Urbana-Champaign (UIUC) in the Materials Science and Engineering department. I hold a PhD in Nuclear Engineering from Penn State University, where I conducted experimental research on advanced materials characterization.</p>
+                <p style="margin-top: 15px;">My research focuses on understanding the structure and properties of two-dimensional materials using advanced analytical techniques. I have extensive experience with electron microscopy and surface analysis methods, with a strong background in both experimental design and data analysis.</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="experience-item">
+                <div class="position">Postdoctoral Scholar</div>
+                <div class="organization">University of Illinois Urbana-Champaign (UIUC)</div>
+                <div class="organization">Materials Science and Engineering Department</div>
+                <div class="period">2026 - Present</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="position">Postdoctoral Researcher</div>
+                <div class="organization">Lawrence Livermore National Laboratory (LLNL)</div>
+                <div class="organization">Materials Science Division</div>
+                <div class="period">2022 - 2025</div>
+                <div class="description">Conducted LDRD (Lab Directed Research and Development) project in collaboration with Prof. Steven Chu on advanced materials characterization and two-dimensional materials research.</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="position">PhD in Nuclear Engineering</div>
+                <div class="organization">Pennsylvania State University</div>
+                <div class="period">Graduated 2021</div>
+                <div class="description">Experimental research on advanced materials characterization and analysis.</div>
+            </div>
+        </section>
+
+        <!-- Research Interests & Skills Section -->
+        <section id="skills">
+            <h2>Research Interests & Technical Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Research Focus</h3>
+                    <p>Two-dimensional materials, surface analysis, materials characterization, nanoscale structure-property relationships</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Microscopy & Analysis</h3>
+                    <p>SEM (Scanning Electron Microscopy), TEM (Transmission Electron Microscopy), FIB (Focused Ion Beam), Surface Analysis, AFM</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Analytical Techniques</h3>
+                    <p>X-ray Diffraction, Spectroscopy, Surface Characterization, Image Analysis, Data Processing</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Software & Tools</h3>
+                    <p>Python, MATLAB, ImageJ, OriginPro, Scientific Data Analysis</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-label">Email:</span>
+                    <span class="contact-value"><a href="mailto:msseo@illinois.edu">msseo@illinois.edu</a></span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">LinkedIn:</span>
+                    <span class="contact-value"><a href="https://www.linkedin.com/in/minsukseo/" target="_blank">linkedin.com/in/minsukseo</a></span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">GitHub:</span>
+                    <span class="contact-value"><a href="https://github.com/minsukseo" target="_blank">github.com/minsukseo</a></span>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
