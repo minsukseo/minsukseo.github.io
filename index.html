@@ -147,40 +147,14 @@
         }
 
         .contact-item {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
-        .contact-label {
-            font-weight: 600;
-            color: #000;
-            display: block;
-            font-size: 0.9rem;
-            margin-bottom: 5px;
-        }
-
-        .contact-links {
-            display: flex;
-            gap: 15px;
-        }
-
-        .contact-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border: 2px solid #000;
-            border-radius: 50%;
+        .contact-item a {
             color: #000;
             text-decoration: none;
-            font-weight: 600;
+            border: none;
             font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .contact-link:hover {
-            background-color: #000;
-            color: white;
         }
 
         a {
@@ -189,7 +163,7 @@
             border-bottom: 1px solid #000;
         }
 
-        a:not(.contact-link):hover {
+        a:hover {
             opacity: 0.7;
         }
 
@@ -247,12 +221,13 @@
                 <h2>Contact</h2>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <span class="contact-label">Get in touch</span>
-                        <div class="contact-links">
-                            <a href="mailto:msseo@illinois.edu" class="contact-link" title="Email">✉</a>
-                            <a href="https://www.linkedin.com/in/minsukseo/" target="_blank" class="contact-link" title="LinkedIn">in</a>
-                            <a href="https://github.com/minsukseo" target="_blank" class="contact-link" title="GitHub">⚡</a>
-                        </div>
+                        <a href="mailto:msseo@illinois.edu">Email</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://www.linkedin.com/in/minsukseo/" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://github.com/minsukseo" target="_blank">GitHub</a>
                     </div>
                 </div>
             </section>
