@@ -85,7 +85,7 @@
             line-height: 1.8;
         }
 
-        .experience-item {
+        .project-item {
             margin-bottom: 35px;
         }
 
@@ -113,30 +113,30 @@
             line-height: 1.7;
         }
 
-        .skills-grid {
+        .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
             margin-bottom: 20px;
         }
 
-        .skill-category {
+        .skill-card {
             background-color: #fafafa;
-            padding: 20px;
+            padding: 25px;
             border-left: 3px solid #000;
         }
 
-        .skill-category h3 {
+        .skill-card h3 {
             font-size: 1rem;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             color: #000;
         }
 
-        .skill-category p {
+        .skill-card p {
             color: #333;
-            font-size: 0.95rem;
-            line-height: 1.6;
+            font-size: 0.9rem;
+            line-height: 1.7;
         }
 
         .contact-info {
@@ -193,7 +193,7 @@
                 font-size: 1.2rem;
             }
 
-            .skills-grid {
+            .skills-container {
                 grid-template-columns: 1fr;
             }
         }
@@ -250,18 +250,18 @@
                 </div>
             </section>
 
-            <!-- Experience Section -->
-            <section id="experience">
-                <h2>Experience</h2>
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>Projects</h2>
 
-                <div class="experience-item">
+                <div class="project-item">
                     <div class="position">Postdoctoral Scholar</div>
                     <div class="organization">University of Illinois Urbana-Champaign (UIUC)</div>
                     <div class="organization">Materials Science and Engineering Department</div>
                     <div class="period">2026 - Present</div>
                 </div>
 
-                <div class="experience-item">
+                <div class="project-item">
                     <div class="position">Postdoctoral Researcher</div>
                     <div class="organization">Lawrence Livermore National Laboratory (LLNL)</div>
                     <div class="organization">Materials Science Division</div>
@@ -269,7 +269,7 @@
                     <div class="description">Conducted LDRD (Lab Directed Research and Development) project in collaboration with Prof. Steven Chu on advanced materials characterization and two-dimensional materials research.</div>
                 </div>
 
-                <div class="experience-item">
+                <div class="project-item">
                     <div class="position">PhD in Nuclear Engineering</div>
                     <div class="organization">Pennsylvania State University</div>
                     <div class="period">Graduated 2021</div>
@@ -277,29 +277,44 @@
                 </div>
             </section>
 
-            <!-- Research Interests & Skills Section -->
-            <section id="skills">
-                <h2>Research Interests & Technical Skills</h2>
+            <!-- Technical Skills Section -->
+            <section id="technical-skills">
+                <h2>Technical Skills</h2>
 
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Research Focus</h3>
-                        <p>Two-dimensional materials, surface analysis, materials characterization, nanoscale structure-property relationships</p>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <h3>Thin Film Growth & 2D Materials</h3>
+                        <p>10nm to ~100µm wafer-scale film, DC/RF magnetron sputtering, PVD, Vacuum systems, Multilayer/scale-up coating development. Hexagonal boron nitride, High entropy alloy (Ni-Cr-Co-Fe-Cu), Rare-earth element, Boron carbide</p>
                     </div>
 
-                    <div class="skill-category">
-                        <h3>Microscopy & Analysis</h3>
-                        <p>SEM (Scanning Electron Microscopy), TEM (Transmission Electron Microscopy), FIB (Focused Ion Beam), Surface Analysis, AFM</p>
+                    <div class="skill-card">
+                        <h3>Advanced Materials</h3>
+                        <p>2D hexagonal boron nitride, High-entropy alloys, Refractory and nuclear materials</p>
                     </div>
 
-                    <div class="skill-category">
-                        <h3>Analytical Techniques</h3>
-                        <p>X-ray Diffraction, Spectroscopy, Surface Characterization, Image Analysis, Data Processing</p>
+                    <div class="skill-card">
+                        <h3>Materials Reliability</h3>
+                        <p>Radiation damage (Ion accelerator), Defect evolution, degradation mechanism in extreme environment</p>
                     </div>
 
-                    <div class="skill-category">
-                        <h3>Software & Tools</h3>
-                        <p>Python, MATLAB, ImageJ, OriginPro, Scientific Data Analysis</p>
+                    <div class="skill-card">
+                        <h3>Surface Engineering</h3>
+                        <p>Plasma etching, sputtering, laser ablation</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Process Development</h3>
+                        <p>Experimental design, process optimization, parameter studies, reproducibility, DOE</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Metrology & Characterization</h3>
+                        <p>AFM, Vickers & nanoindentation, DTA, TMA, Confocal laser microscopy, profilometry, UV-Vis, Raman, FTIR, XRD, XRF, NMR, EPR, SEM/EDS, FIB milling, TEM operation and microphotography, Rutherford Backscattering Spectrometer, Plasma diagnostics (Langmuir probe, ion mass spectrometer, OES, RGA)</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Post-Treatment</h3>
+                        <p>High Temperature Furnace (~1500°C), Glass quench-synthesis, Corrosion test, TEM sample preparation, Oxidation, Annealing</p>
                     </div>
                 </div>
             </section>
