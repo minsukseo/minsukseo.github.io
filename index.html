@@ -19,9 +19,24 @@
             font-size: 16px;
         }
 
-        .container {
-            max-width: 900px;
+        .wrapper {
+            display: flex;
+            max-width: 1200px;
             margin: 0 auto;
+        }
+
+        .sidebar {
+            width: 250px;
+            padding: 60px 40px;
+            border-right: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .main-content {
+            flex: 1;
             padding: 60px 40px;
         }
 
@@ -55,6 +70,13 @@
             color: #000;
             border-bottom: 2px solid #f0f0f0;
             padding-bottom: 10px;
+        }
+
+        .sidebar h2 {
+            font-size: 1.1rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
         }
 
         .about-text {
@@ -118,25 +140,27 @@
         }
 
         .contact-info {
-            background-color: #fafafa;
-            padding: 30px;
-            border-left: 3px solid #000;
-            margin-top: 30px;
+            background-color: transparent;
+            padding: 0;
+            border-left: none;
+            margin-top: 0;
         }
 
         .contact-item {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .contact-label {
             font-weight: 600;
             color: #000;
-            display: inline-block;
-            width: 80px;
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
         }
 
         .contact-value {
             color: #333;
+            font-size: 0.9rem;
         }
 
         a {
@@ -149,9 +173,22 @@
             opacity: 0.7;
         }
 
-        @media (max-width: 600px) {
-            .container {
-                padding: 40px 20px;
+        @media (max-width: 900px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+                padding: 40px;
+                position: static;
+                height: auto;
+            }
+
+            .main-content {
+                padding: 40px;
             }
 
             h1 {
@@ -166,97 +203,116 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        @media (max-width: 600px) {
+            .sidebar {
+                padding: 30px 20px;
+            }
+
+            .main-content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <h1>Minsuk Seo</h1>
-            <p class="subtitle">PhD Researcher & Postdoctoral Scholar in Materials Science</p>
-        </header>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value"><a href="mailto:msseo@illinois.edu">msseo@illinois.edu</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value"><a href="https://www.linkedin.com/in/minsukseo/" target="_blank">linkedin.com/in/minsukseo</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value"><a href="https://github.com/minsukseo" target="_blank">github.com/minsukseo</a></span>
+                    </div>
+                </div>
+            </section>
+        </aside>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About</h2>
-            <div class="about-text">
-                <p>I am a postdoctoral researcher at the University of Illinois Urbana-Champaign (UIUC) in the Materials Science and Engineering department. I hold a PhD in Nuclear Engineering from Penn State University, where I conducted experimental research on advanced materials characterization.</p>
-                <p style="margin-top: 15px;">My research focuses on understanding the structure and properties of two-dimensional materials using advanced analytical techniques. I have extensive experience with electron microscopy and surface analysis methods, with a strong background in both experimental design and data analysis.</p>
-            </div>
-        </section>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header>
+                <h1>Minsuk Seo</h1>
+                <p class="subtitle">PhD Researcher & Postdoctoral Scholar in Materials Science</p>
+            </header>
 
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience</h2>
+            <!-- About Section -->
+            <section id="about">
+                <h2>About</h2>
+                <div class="about-text">
+                    <p>I am a postdoctoral researcher at the University of Illinois Urbana-Champaign (UIUC) in the Materials Science and Engineering department. I hold a PhD in Nuclear Engineering from Penn State University, where I conducted experimental research on advanced materials characterization.</p>
+                    <p style="margin-top: 15px;">My research focuses on understanding the structure and properties of two-dimensional materials using advanced analytical techniques. I have extensive experience with electron microscopy and surface analysis methods, with a strong background in both experimental design and data analysis.</p>
+                </div>
+            </section>
 
-            <div class="experience-item">
-                <div class="position">Postdoctoral Scholar</div>
-                <div class="organization">University of Illinois Urbana-Champaign (UIUC)</div>
-                <div class="organization">Materials Science and Engineering Department</div>
-                <div class="period">2026 - Present</div>
-            </div>
+            <!-- Experience Section -->
+            <section id="experience">
+                <h2>Experience</h2>
 
-            <div class="experience-item">
-                <div class="position">Postdoctoral Researcher</div>
-                <div class="organization">Lawrence Livermore National Laboratory (LLNL)</div>
-                <div class="organization">Materials Science Division</div>
-                <div class="period">2022 - 2025</div>
-                <div class="description">Conducted LDRD (Lab Directed Research and Development) project in collaboration with Prof. Steven Chu on advanced materials characterization and two-dimensional materials research.</div>
-            </div>
-
-            <div class="experience-item">
-                <div class="position">PhD in Nuclear Engineering</div>
-                <div class="organization">Pennsylvania State University</div>
-                <div class="period">Graduated 2021</div>
-                <div class="description">Experimental research on advanced materials characterization and analysis.</div>
-            </div>
-        </section>
-
-        <!-- Research Interests & Skills Section -->
-        <section id="skills">
-            <h2>Research Interests & Technical Skills</h2>
-
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Research Focus</h3>
-                    <p>Two-dimensional materials, surface analysis, materials characterization, nanoscale structure-property relationships</p>
+                <div class="experience-item">
+                    <div class="position">Postdoctoral Scholar</div>
+                    <div class="organization">University of Illinois Urbana-Champaign (UIUC)</div>
+                    <div class="organization">Materials Science and Engineering Department</div>
+                    <div class="period">2026 - Present</div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Microscopy & Analysis</h3>
-                    <p>SEM (Scanning Electron Microscopy), TEM (Transmission Electron Microscopy), FIB (Focused Ion Beam), Surface Analysis, AFM</p>
+                <div class="experience-item">
+                    <div class="position">Postdoctoral Researcher</div>
+                    <div class="organization">Lawrence Livermore National Laboratory (LLNL)</div>
+                    <div class="organization">Materials Science Division</div>
+                    <div class="period">2022 - 2025</div>
+                    <div class="description">Conducted LDRD (Lab Directed Research and Development) project in collaboration with Prof. Steven Chu on advanced materials characterization and two-dimensional materials research.</div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Analytical Techniques</h3>
-                    <p>X-ray Diffraction, Spectroscopy, Surface Characterization, Image Analysis, Data Processing</p>
+                <div class="experience-item">
+                    <div class="position">PhD in Nuclear Engineering</div>
+                    <div class="organization">Pennsylvania State University</div>
+                    <div class="period">Graduated 2021</div>
+                    <div class="description">Experimental research on advanced materials characterization and analysis.</div>
                 </div>
+            </section>
 
-                <div class="skill-category">
-                    <h3>Software & Tools</h3>
-                    <p>Python, MATLAB, ImageJ, OriginPro, Scientific Data Analysis</p>
-                </div>
-            </div>
-        </section>
+            <!-- Research Interests & Skills Section -->
+            <section id="skills">
+                <h2>Research Interests & Technical Skills</h2>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="contact-label">Email:</span>
-                    <span class="contact-value"><a href="mailto:msseo@illinois.edu">msseo@illinois.edu</a></span>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Research Focus</h3>
+                        <p>Two-dimensional materials, surface analysis, materials characterization, nanoscale structure-property relationships</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Microscopy & Analysis</h3>
+                        <p>SEM (Scanning Electron Microscopy), TEM (Transmission Electron Microscopy), FIB (Focused Ion Beam), Surface Analysis, AFM</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Analytical Techniques</h3>
+                        <p>X-ray Diffraction, Spectroscopy, Surface Characterization, Image Analysis, Data Processing</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Software & Tools</h3>
+                        <p>Python, MATLAB, ImageJ, OriginPro, Scientific Data Analysis</p>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <span class="contact-label">LinkedIn:</span>
-                    <span class="contact-value"><a href="https://www.linkedin.com/in/minsukseo/" target="_blank">linkedin.com/in/minsukseo</a></span>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-label">GitHub:</span>
-                    <span class="contact-value"><a href="https://github.com/minsukseo" target="_blank">github.com/minsukseo</a></span>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 </body>
 </html>
