@@ -140,13 +140,17 @@
 
         .nif-link { color: #0066cc; border-bottom: none; }
 
-        /* TEM image styling */
+        /* TEM slider styling */
+        .tem-slider {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
         .tem-img {
             width: 100%;
-            max-width: 600px;
             border: 1px solid #e0e0e0;
             display: block;
-            margin: 0 auto;
         }
 
         .tem-caption {
@@ -156,6 +160,28 @@
             line-height: 1.4;
             text-align: center;
         }
+
+        /* Arrow buttons inside image */
+        .arrow-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            background: rgba(0,0,0,0.35);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+
+        .arrow-btn:hover {
+            background: rgba(0,0,0,0.55);
+        }
+
+        #prevBtn { left: 10px; }
+        #nextBtn { right: 10px; }
 
         @media (max-width: 900px) {
             .wrapper { flex-direction: column; }
@@ -256,23 +282,21 @@
                 </div>
             </section>
 
-            <!-- TEM IMAGE SECTION (SLIDER) -->
+            <!-- TEM IMAGE SECTION (SLIDER WITH SWIPE + OVERLAY ARROWS) -->
             <section id="tem-gallery">
                 <h2>TEM Microstructure</h2>
 
-                <div class="tem-slider" style="margin-top: 20px; text-align:center;">
+                <div class="tem-slider" id="slider">
                     <img id="temImage" src="nanoTEM.png" class="tem-img" alt="TEM microstructure">
+
+                    <button id="prevBtn" class="arrow-btn">⬅️</button>
+                    <button id="nextBtn" class="arrow-btn">➡️</button>
 
                     <p id="temCaption" class="tem-caption">
                         STEM DF cross-sectional microstructure (200 kV, 7.26 kx).  
                         Shows interface quality and defect morphology relevant to  
                         <strong>Radiation Defect Engineering in Two-Dimensional Membranes</strong>.
                     </p>
-
-                    <div style="margin-top: 15px; display:flex; justify-content:center; gap:25px;">
-                        <button id="prevBtn" style="font-size:1.5rem; background:none; border:none; cursor:pointer;">⬅️</button>
-                        <button id="nextBtn" style="font-size:1.5rem; background:none; border:none; cursor:pointer;">➡️</button>
-                    </div>
                 </div>
             </section>
 
@@ -298,6 +322,7 @@
                 const temCaption = document.getElementById("temCaption");
                 const prevBtn = document.getElementById("prevBtn");
                 const nextBtn = document.getElementById("nextBtn");
+                const slider = document.getElementById("slider");
 
                 function updateImage() {
                     temImage.src = images[currentIndex].src;
@@ -312,6 +337,27 @@
                 nextBtn.addEventListener("click", () => {
                     currentIndex = (currentIndex + 1) % images.length;
                     updateImage();
+                });
+
+                /* Mobile swipe gesture */
+                let startX = 0;
+
+                slider.addEventListener("touchstart", (e) => {
+                    startX = e.touches[0].clientX;
+                });
+
+                slider.addEventListener("touchend", (e) => {
+                    let endX = e.changedTouches[0].clientX;
+                    let diff = endX - startX;
+
+                    if (Math.abs(diff) > 50) {
+                        if (diff < 0) {
+                            currentIndex = (currentIndex + 1) % images.length;
+                        } else {
+                            currentIndex = (currentIndex - 1 + images.length) % images.length;
+                        }
+                        updateImage();
+                    }
                 });
             </script>
 
@@ -381,3 +427,4 @@
     </div>
 </body>
 </html>
+
