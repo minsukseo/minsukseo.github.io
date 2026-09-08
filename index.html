@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minsuk Seo - Materials Engineer</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             background-color: white;
@@ -40,27 +36,13 @@
             padding: 50px 35px;
         }
 
-        .sidebar-header {
-            margin-bottom: 30px;
-        }
+        .sidebar-header { margin-bottom: 30px; }
 
-        h1 {
-            font-size: 1.75rem;
-            margin-bottom: 8px;
-            font-weight: 700;
-            color: #000;
-        }
+        h1 { font-size: 1.75rem; margin-bottom: 8px; font-weight: 700; color: #000; }
 
-        .title {
-            font-size: 0.9rem;
-            color: #333;
-            margin-bottom: 15px;
-            font-weight: 500;
-        }
+        .title { font-size: 0.9rem; color: #333; margin-bottom: 15px; font-weight: 500; }
 
-        section {
-            margin-bottom: 40px;
-        }
+        section { margin-bottom: 40px; }
 
         h2 {
             font-size: 1.3rem;
@@ -71,21 +53,9 @@
             padding-bottom: 8px;
         }
 
-        .sidebar h2 {
-            font-size: 1rem;
-            margin-bottom: 15px;
-            padding-bottom: 6px;
-        }
+        .about-text { margin-bottom: 25px; color: #333; line-height: 1.5; }
 
-        .about-text {
-            margin-bottom: 25px;
-            color: #333;
-            line-height: 1.5;
-        }
-
-        .project-item {
-            margin-bottom: 25px;
-        }
+        .project-item { margin-bottom: 25px; }
 
         .project-title {
             font-size: 1.05rem;
@@ -106,15 +76,9 @@
             font-size: 0.95rem;
         }
 
-        .publication-item {
-            margin-top: 10px;
-            margin-bottom: 6px;
-        }
+        .publication-item { margin-top: 10px; margin-bottom: 6px; }
 
-        .publication-title {
-            font-weight: 600;
-            color: #000;
-        }
+        .publication-title { font-weight: 600; color: #000; }
 
         .publication-journal {
             color: #666;
@@ -128,16 +92,9 @@
             border-bottom: 1px solid #f0f0f0;
         }
 
-        .talk-title {
-            font-weight: 600;
-            color: #000;
-            margin-bottom: 3px;
-        }
+        .talk-title { font-weight: 600; color: #000; margin-bottom: 3px; }
 
-        .talk-venue {
-            color: #666;
-            font-size: 0.85rem;
-        }
+        .talk-venue { color: #666; font-size: 0.85rem; }
 
         .skills-container {
             display: grid;
@@ -165,17 +122,9 @@
             line-height: 1.45;
         }
 
-        .contact-info {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
+        .contact-info { display: flex; gap: 12px; flex-wrap: wrap; }
 
-        .contact-item a {
-            color: #000;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
+        .contact-item a { color: #000; text-decoration: none; font-size: 0.9rem; }
 
         .address {
             font-size: 0.8rem;
@@ -186,26 +135,28 @@
             border-top: 1px solid #e0e0e0;
         }
 
-        a {
-            color: #000;
-            text-decoration: none;
-            border-bottom: 1px solid #000;
+        a { color: #000; text-decoration: none; border-bottom: 1px solid #000; }
+        a:hover { opacity: 0.7; }
+
+        .nif-link { color: #0066cc; border-bottom: none; }
+
+        /* TEM image styling */
+        .tem-img {
+            width: 100%;
+            max-width: 600px;
+            border: 1px solid #e0e0e0;
+            display: block;
         }
 
-        a:hover {
-            opacity: 0.7;
-        }
-
-        .nif-link {
-            color: #0066cc;
-            border-bottom: none;
+        .tem-caption {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.4;
         }
 
         @media (max-width: 900px) {
-            .wrapper {
-                flex-direction: column;
-            }
-
+            .wrapper { flex-direction: column; }
             .sidebar {
                 width: 100%;
                 border-right: none;
@@ -214,31 +165,18 @@
                 position: static;
                 height: auto;
             }
-
-            .main-content {
-                padding: 35px;
-            }
-
-            h2 {
-                font-size: 1.15rem;
-            }
-
-            .skills-container {
-                grid-template-columns: 1fr;
-            }
+            .main-content { padding: 35px; }
+            h2 { font-size: 1.15rem; }
+            .skills-container { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 600px) {
-            .sidebar {
-                padding: 25px 18px;
-            }
-
-            .main-content {
-                padding: 25px 18px;
-            }
+            .sidebar { padding: 25px 18px; }
+            .main-content { padding: 25px 18px; }
         }
     </style>
 </head>
+
 <body>
     <div class="wrapper">
         <aside class="sidebar">
@@ -250,21 +188,18 @@
             <section id="contact">
                 <h2>Contact</h2>
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <a href="mailto:msseo@illinois.edu">Email</a>
-                    </div>
-                    <div class="contact-item">
-                        <a href="https://www.linkedin.com/in/minsukseo/" target="_blank">LinkedIn</a>
-                    </div>
+                    <div class="contact-item"><a href="mailto:msseo@illinois.edu">Email</a></div>
+                    <div class="contact-item"><a href="https://www.linkedin.com/in/minsukseo/" target="_blank">LinkedIn</a></div>
                 </div>
                 <div class="address">
-                    1304 W. Green St. MC 246<br>
-                    Urbana, IL 61801
+                    1304 W. Green St. MC 246<br>Urbana, IL 61801
                 </div>
             </section>
         </aside>
 
         <div class="main-content">
+
+            <!-- ABOUT -->
             <section id="about">
                 <div class="about-text">
                     <p>I am a postdoctoral researcher at the University of Illinois Urbana-Champaign (UIUC) in the Materials Science and Engineering department, formerly at Lawrence Livermore National Laboratory. I hold a PhD in Nuclear Engineering from Penn State University, where I conducted experimental research on advanced materials characterization.</p>
@@ -272,30 +207,27 @@
                 </div>
             </section>
 
+            <!-- PROJECTS -->
             <section id="projects">
                 <h2>Projects</h2>
 
                 <div class="project-item">
                     <div class="project-title">High Entropy Alloy Design and Metastable Structures</div>
 
-                    <!-- UIUC 링크 + NIF 스타일 적용 -->
                     <div class="project-meta">
-                        <a href="https://illinois.edu/" target="_blank" 
-                           style="color:#0066cc; text-decoration:none;">
+                        <a href="https://illinois.edu/" target="_blank" style="color:#0066cc; text-decoration:none;">
                             University of Illinois Urbana-Champaign (UIUC)
                         </a>, Materials Science and Engineering Department, 2026 - Present
                     </div>
 
                     <div style="margin-top: 10px;">
-                        <a href="https://lasers.llnl.gov/about/keys-to-success/targets" 
-                           target="_blank" class="nif-link">
-                           National Ignition Facility Target Fabrication
+                        <a href="https://lasers.llnl.gov/about/keys-to-success/targets" target="_blank" class="nif-link">
+                            National Ignition Facility Target Fabrication
                         </a>, 2025
                     </div>
                 </div>
 
                 <div class="project-item">
-                    <!-- 제목 변경 -->
                     <div class="project-title">Radiation Defect Engineering in Two-Dimensional Membranes</div>
 
                     <div class="project-meta">
@@ -322,6 +254,22 @@
                 </div>
             </section>
 
+            <!-- TEM IMAGE SECTION -->
+            <section id="tem-gallery">
+                <h2>TEM Microstructure</h2>
+
+                <div style="margin-top: 20px;">
+                    <img src="images/tem.png" class="tem-img" alt="TEM microstructure">
+
+                    <p class="tem-caption">
+                        STEM DF cross-sectional microstructure (200 kV, 7.26 kx).  
+                        Shows interface quality and defect morphology relevant to  
+                        <strong>Radiation Defect Engineering in Two-Dimensional Membranes</strong>.
+                    </p>
+                </div>
+            </section>
+
+            <!-- INVITED TALKS -->
             <section id="invited-talks">
                 <h2>Invited Talks</h2>
 
@@ -341,6 +289,7 @@
                 </div>
             </section>
 
+            <!-- SKILLS -->
             <section id="technical-skills">
                 <h2>Technical Skills</h2>
 
@@ -381,6 +330,7 @@
                     </div>
                 </div>
             </section>
+
         </div>
     </div>
 </body>
