@@ -146,6 +146,7 @@
             max-width: 600px;
             border: 1px solid #e0e0e0;
             display: block;
+            margin: 0 auto;
         }
 
         .tem-caption {
@@ -153,6 +154,7 @@
             color: #666;
             margin-top: 8px;
             line-height: 1.4;
+            text-align: center;
         }
 
         @media (max-width: 900px) {
@@ -254,20 +256,64 @@
                 </div>
             </section>
 
-            <!-- TEM IMAGE SECTION -->
+            <!-- TEM IMAGE SECTION (SLIDER) -->
             <section id="tem-gallery">
                 <h2>TEM Microstructure</h2>
 
-                <div style="margin-top: 20px;">
-                    <img src="nanoTEM.png" class="tem-img" alt="TEM microstructure">
+                <div class="tem-slider" style="margin-top: 20px; text-align:center;">
+                    <img id="temImage" src="nanoTEM.png" class="tem-img" alt="TEM microstructure">
 
-                    <p class="tem-caption">
+                    <p id="temCaption" class="tem-caption">
                         STEM DF cross-sectional microstructure (200 kV, 7.26 kx).  
                         Shows interface quality and defect morphology relevant to  
                         <strong>Radiation Defect Engineering in Two-Dimensional Membranes</strong>.
                     </p>
+
+                    <div style="margin-top: 15px; display:flex; justify-content:center; gap:25px;">
+                        <button id="prevBtn" style="font-size:1.5rem; background:none; border:none; cursor:pointer;">⬅️</button>
+                        <button id="nextBtn" style="font-size:1.5rem; background:none; border:none; cursor:pointer;">➡️</button>
+                    </div>
                 </div>
             </section>
+
+            <script>
+                const images = [
+                    {
+                        src: "nanoTEM.png",
+                        caption: `STEM DF cross-sectional microstructure (200 kV, 7.26 kx).
+                                  Shows interface quality and defect morphology relevant to
+                                  Radiation Defect Engineering in Two-Dimensional Membranes.`
+                    },
+                    {
+                        src: "FIB.png",
+                        caption: `FIB cross-sectional lamella prepared for TEM analysis.
+                                  Shows milling quality, interface sharpness, and defect exposure
+                                  relevant to microstructure characterization workflows.`
+                    }
+                ];
+
+                let currentIndex = 0;
+
+                const temImage = document.getElementById("temImage");
+                const temCaption = document.getElementById("temCaption");
+                const prevBtn = document.getElementById("prevBtn");
+                const nextBtn = document.getElementById("nextBtn");
+
+                function updateImage() {
+                    temImage.src = images[currentIndex].src;
+                    temCaption.innerHTML = images[currentIndex].caption;
+                }
+
+                prevBtn.addEventListener("click", () => {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    updateImage();
+                });
+
+                nextBtn.addEventListener("click", () => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    updateImage();
+                });
+            </script>
 
             <!-- INVITED TALKS -->
             <section id="invited-talks">
