@@ -76,14 +76,31 @@
             font-size: 0.95rem;
         }
 
-        .publication-item { margin-top: 10px; margin-bottom: 6px; }
+        .publication-list {
+            list-style: none;
+            padding-left: 0;
+        }
 
-        .publication-title { font-weight: normal; color: #000; }
+        .publication-item {
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.45;
+        }
 
-        .publication-journal {
-            color: #666;
+        .publication-item em {
             font-style: italic;
-            font-size: 0.85rem;
+            color: #111;
+        }
+
+        .pub-category-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #111;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-left: 3px solid #000;
+            padding-left: 8px;
         }
 
         .talk-item {
@@ -144,6 +161,8 @@
         .nif-link { color: #0066cc; border-bottom: none; }
         .uiuc-link { color: #0066cc; text-decoration: none; border-bottom: none; }
         .llnl-link { color: #0066cc; text-decoration: none; border-bottom: none; }
+        .pub-link { color: #0066cc; text-decoration: none; border-bottom: none; }
+        .pub-link:hover { text-decoration: underline; }
 
         /* TEM slider styling reduced to 2/3 size (max-width: 400px) with smooth fade transition */
         .tem-slider {
@@ -276,7 +295,7 @@
                         3-, 4-, 5- element Nickel based alloy sputter synthesis and ion irradiation induced microstructural modification (PI: Prof. Marie Charpagne)
                     </div>
                     <div class="description" style="margin-top: 5px;">
-                        Weekly preparation of TEM samples using Focused Ion Beam (FIB) and operation of TEM equipment for microstructural characterization.
+                        Every week, I prepare TEM samples using Focused Ion Beam (FIB) and operate transmission electron microscopy (TEM) equipment for detailed microstructural characterization.
                     </div>
 
                     <div style="margin-top: 15px;">
@@ -285,14 +304,6 @@
                         </div>
                         <div class="description" style="margin-top: 5px;">
                             Coauthored work (PI: Dr. Sergei Kucheyev) with researchers at Blue Laser Fusion Inc., founded by Prof. Shuji Nakamura (2014 Nobel Laureate in Physics), focusing on advanced material integration for fusion energy systems.
-                        </div>
-                        <div style="margin-top: 10px;">
-                            <div class="publication-item">
-                                <a href="https://doi.org/10.1063/5.0272124" target="_blank" class="plain-link">
-                                    <span class="publication-title">Publication under Blue Laser Fusion collaboration</span>
-                                </a><br>
-                                <span class="publication-journal">Applied Physics Letters / DOI: 10.1063/5.0272124, 2025</span>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -306,20 +317,6 @@
 
                     <div class="description">
                         Conducted LDRD project in collaboration with the research group of Prof. Steven Chu (1997 Nobel Laureate in Physics) at Stanford University on advanced materials characterization and two-dimensional materials research.
-                        <div style="margin-top: 10px;">
-                            <div class="publication-item">
-                                <a href="https://doi.org/10.1021/acsami.5c25472" target="_blank" class="plain-link">
-                                    <span class="publication-title">Dynamics of Radiation Damage Buildup in Ultrathin Hexagonal Boron Nitride Films under Ion Bombardment</span>
-                                </a><br>
-                                <span class="publication-journal">ACS Applied Materials & Interfaces, 2026</span>
-                            </div>
-                            <div class="publication-item">
-                                <a href="https://doi.org/10.1016/j.scriptamat.2025.116756" target="_blank" class="plain-link">
-                                    <span class="publication-title">Two-dimensional hexagonal boron nitride nanosheets: synthesis and characterization</span>
-                                </a><br>
-                                <span class="publication-journal">Scripta Materialia, 2025</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -414,6 +411,65 @@
                     }
                 });
             </script>
+
+            <!-- PUBLICATIONS -->
+            <section id="publications">
+                <h2>Publications</h2>
+
+                <div class="pub-category-title">LLNL – Steven Chu group collaboration</div>
+                <ul class="publication-list">
+                    <li class="publication-item">
+                        Minsuk Seo*, L. Bimo Bayu Aji, Luis A. Zepeda-Luiz, Sang Cheol Kim, Yan-Kai Tzeng, Steven Chu, Sergei O. Kucheyev, “Dynamics of radiation damage buildup in ultrathin hexagonal boron nitride under ion irradiation” <em>ACS Applied Materials & Interfaces</em> (2026). <a href="https://doi.org/10.1021/acsami.5c25472" target="_blank" class="pub-link">doi.org/10.1021/acsami.5c25472</a>
+                    </li>
+                    <li class="publication-item">
+                        Minsuk Seo*, L. Bimo Bayu Aji, Sang Cheol Kim, Yan-Kai Tzeng, Alexander A. Baker, Finnian M. O’Neill, Steven Chu, Sergei O. Kucheyev, “Damage buildup in multilayer hexagonal boron nitride films under Ar ion bombardment” <em>Scripta Materialia</em> 265, 116756 (2025). <a href="https://doi.org/10.1016/j.scriptamat.2025.116756" target="_blank" class="pub-link">doi.org/10.1016/j.scriptamat.2025.116756</a>
+                    </li>
+                </ul>
+
+                <div class="pub-category-title" style="margin-top: 25px;">LLNL</div>
+                <ul class="publication-list">
+                    <li class="publication-item">
+                        James B. Merlo, Minsuk Seo, Koki Kawasaki, Liam R. Sohngen, L. Bimo Bayu Aji, Swanee J. Shin, Gregory V. Taylor, Sergei O. Kucheyev, “Effects of discharge power for magnetron sputter deposition of boron carbide films on tilted substrates” <em>Journal of Applied Physics</em> (2026). <a href="https://doi.org/10.1063/5.0317058" target="_blank" class="pub-link">doi.org/10.1063/5.0317058</a>
+                    </li>
+                    <li class="publication-item">
+                        Matthew S. Wong, Gregory V. Taylor, Minsuk Seo, L. R. Sohngen, James B. Merlo, L. Bimo Bayu Aji, Swanee J. Shin, Shuji Nakamura, Sergei O. Kucheyev, “Effects of hydrogen on sputter-deposited boron carbide films” <em>Journal of Applied Physics</em> 137(19) 095301 (2025). <a href="https://doi.org/10.1063/5.0272124" target="_blank" class="pub-link">doi.org/10.1063/5.0272124</a>
+                    </li>
+                    <li class="publication-item">
+                        Wenyu Sun, Minsuk Seo, L. Bimo Bayu Aji, Gregory V. Taylor, Alexander A. Baker, Sergei O. Kucheyev, Liwen F. Wan, “First-Principles simulations correlating X-ray absorption spectroscopy features to point defects in h-BN” <em>The Journal of Physical Chemistry Letters</em> 16, 16 (2025): 3926-3931. <a href="https://doi.org/10.1021/acs.jpclett.5c00768" target="_blank" class="pub-link">doi.org/10.1021/acs.jpclett.5c00768</a>
+                    </li>
+                    <li class="publication-item">
+                        Koki Kawasaki, James B. Merlo, Stephanie Gonzalez, L. Bimo Bayu Aji, Swanee J. Shin, Gregory V. Taylor, Alison M. Engwall, Minsuk Seo, Alex A. Baker, Matthew S. Wong, Finnian M. O’Neill, Sergei O. Kucheyev, “High-rate magnetron sputter deposition of low-stress boron carbide films on tilted substrates” <em>Journal of Applied Physics</em> 138(10) 105302 (2025). <a href="https://doi.org/10.1063/5.0283657" target="_blank" class="pub-link">doi.org/10.1063/5.0283657</a>
+                    </li>
+                    <li class="publication-item">
+                        Minsuk Seo, James B. Merlo, Liam R. Sohngen, L. Bimo Bayu Aji, Jessica Bober, Qi Rong Yang, Gregory V. Taylor, Sergei O. Kucheyev, “Ion bombardment tailoring of stress and tensile strength in sputter deposited boron carbide” (2026, under review).
+                    </li>
+                    <li class="publication-item">
+                        James B. Merlo, Jessica Bober, Minsuk Seo, Liam R. Sohngen, Qi Rong Yang, Gregory V. Taylor, Sergei O. Kucheyev, “Intrinsic stress and stiffness of boron carbide films” (2026, under review).
+                    </li>
+                    <li class="publication-item">
+                        Cheng-Da Tu, Chih-Chieh Chang, Wei-Jie Hsu, Yong-Ji Chen, Jen-Inn Chyi, Chien-Ting Wu, Kun-Lin Lin, Minsuk Seo, Augustinas Galeckas, Yun-Chorng Chang, Andrej Kuznetsov, “Overcoming p-channel transistor performance asymmetry with ultrahigh conductance two-dimensional hole gas at the boron nitride/silicon interface” (2026, submitted).
+                    </li>
+                </ul>
+
+                <div class="pub-category-title" style="margin-top: 25px;">Penn State</div>
+                <ul class="publication-list">
+                    <li class="publication-item">
+                        Minsuk Seo*, Shukai Yu, Venkatraman Gopalan, A. Leigh Winfrey, “Observations on macroscopic surface modification and oxidation of tungsten and tungsten carbide in laser focus in air” <em>Fusion Science and Technology</em> (2025): 1-6. <a href="https://doi.org/10.1080/15361055.2024.2343972" target="_blank" class="pub-link">doi.org/10.1080/15361055.2024.2343972</a>
+                    </li>
+                    <li class="publication-item">
+                        Minsuk Seo*, A. Leigh Winfrey, “Microstructural modification of highly porous resolidified tungsten in heat flux of 46.3GW/m2 and focused ion beam” <em>Fusion Engineering and Design</em> (2024): 114206. <a href="https://doi.org/10.1016/j.jnucmat.2022.153725" target="_blank" class="pub-link">doi.org/10.1016/j.jnucmat.2022.153725</a>
+                    </li>
+                    <li class="publication-item">
+                        Minsuk Seo*, Ke Wang, John R. Echols, A. Leigh Winfrey, “Microstructure deformation and near-pore environment of resolidified tungsten in high heat flux conditions” <em>Journal of Nuclear Materials</em> (2022): 153725. <a href="https://doi.org/10.1016/j.jnucmat.2022.153725" target="_blank" class="pub-link">doi.org/10.1016/j.jnucmat.2022.153725</a>
+                    </li>
+                    <li class="publication-item">
+                        Minsuk Seo*, “Assessment of the maximum temperature of simplified high heat radioactive glass in interim storage and deep geological disposal” <em>Nuclear Technology</em> 207 (2021): 1902-1912. <a href="https://doi.org/10.1080/00295450.2020.1860614" target="_blank" class="pub-link">doi.org/10.1080/00295450.2020.1860614</a>
+                    </li>
+                    <li class="publication-item">
+                        Minsuk Seo*, John R. Echols, A. Leigh Winfrey, “Morphological and nanomechanical changes in tungsten in high heat flux conditions” <em>npj Materials Degradation</em> 4.1 (2020): 1-8. <a href="https://doi.org/10.1038/s41529-020-00135-4" target="_blank" class="pub-link">doi.org/10.1038/s41529-020-00135-4</a>
+                    </li>
+                </ul>
+            </section>
 
             <!-- INVITED TALKS -->
             <section id="invited-talks">
