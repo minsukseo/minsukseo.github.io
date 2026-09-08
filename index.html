@@ -140,17 +140,30 @@
 
         .nif-link { color: #0066cc; border-bottom: none; }
 
-        /* TEM slider styling */
+        /* TEM slider styling with smooth fade transition */
         .tem-slider {
             position: relative;
             max-width: 600px;
             margin: 0 auto;
         }
 
+        .tem-img-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+            background: #f9f9f9;
+        }
+
         .tem-img {
             width: 100%;
-            border: 1px solid #e0e0e0;
             display: block;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .tem-img.fade-out {
+            opacity: 0;
         }
 
         .tem-caption {
@@ -159,29 +172,38 @@
             margin-top: 8px;
             line-height: 1.4;
             text-align: center;
+            transition: opacity 0.3s ease-in-out;
         }
 
-        /* Arrow buttons inside image */
+        /* Gray minimalist arrow buttons without tails (< >) */
         .arrow-btn {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 2rem;
-            background: rgba(0,0,0,0.35);
-            color: white;
+            font-size: 2.2rem;
+            font-weight: 300;
+            background: rgba(255, 255, 255, 0.7);
+            color: #555;
             border: none;
-            padding: 10px 15px;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
-            border-radius: 8px;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             transition: 0.2s;
+            z-index: 10;
         }
 
         .arrow-btn:hover {
-            background: rgba(0,0,0,0.55);
+            background: rgba(255, 255, 255, 0.95);
+            color: #000;
         }
 
-        #prevBtn { left: 10px; }
-        #nextBtn { right: 10px; }
+        #prevBtn { left: 12px; }
+        #nextBtn { right: 12px; }
 
         @media (max-width: 900px) {
             .wrapper { flex-direction: column; }
@@ -245,13 +267,13 @@
                     <div class="project-meta">
                         <a href="https://illinois.edu/" target="_blank" style="color:#0066cc; text-decoration:none;">
                             University of Illinois Urbana-Champaign (UIUC)
-                        </a>, Materials Science and Engineering Department, 2026 - Present
+                        ], Materials Science and Engineering Department, 2026 - Present
                     </div>
 
                     <div style="margin-top: 10px;">
                         <a href="https://lasers.llnl.gov/about/keys-to-success/targets" target="_blank" class="nif-link">
                             National Ignition Facility Target Fabrication
-                        </a>, 2025
+                        ], 2025
                     </div>
                 </div>
 
@@ -282,15 +304,17 @@
                 </div>
             </section>
 
-            <!-- TEM IMAGE SECTION (SLIDER WITH SWIPE + OVERLAY ARROWS) -->
+            <!-- TEM IMAGE SECTION -->
             <section id="tem-gallery">
                 <h2>TEM Microstructure</h2>
 
                 <div class="tem-slider" id="slider">
-                    <img id="temImage" src="nanoTEM.png" class="tem-img" alt="TEM microstructure">
+                    <div class="tem-img-container">
+                        <img id="temImage" src="nanoTEM.png" class="tem-img" alt="TEM microstructure">
+                    </div>
 
-                    <button id="prevBtn" class="arrow-btn">⬅️</button>
-                    <button id="nextBtn" class="arrow-btn">➡️</button>
+                    <button id="prevBtn" class="arrow-btn">&#8249;</button>
+                    <button id="nextBtn" class="arrow-btn">&#8250;</button>
 
                     <p id="temCaption" class="tem-caption">
                         STEM DF cross-sectional microstructure (200 kV, 7.26 kx).  
@@ -324,22 +348,33 @@
                 const nextBtn = document.getElementById("nextBtn");
                 const slider = document.getElementById("slider");
 
-                function updateImage() {
-                    temImage.src = images[currentIndex].src;
-                    temCaption.innerHTML = images[currentIndex].caption;
+                function updateImage(newIndex) {
+                    // Smooth fade out effect
+                    temImage.classList.add("fade-out");
+                    temCaption.style.opacity = 0;
+
+                    setTimeout(() => {
+                        currentIndex = newIndex;
+                        temImage.src = images[currentIndex].src;
+                        temCaption.innerHTML = images[currentIndex].caption;
+
+                        // Fade in effect
+                        temImage.classList.remove("fade-out");
+                        temCaption.style.opacity = 1;
+                    }, 250); // Matches CSS transition duration
                 }
 
                 prevBtn.addEventListener("click", () => {
-                    currentIndex = (currentIndex - 1 + images.length) % images.length;
-                    updateImage();
+                    let newIndex = (currentIndex - 1 + images.length) % images.length;
+                    updateImage(newIndex);
                 });
 
                 nextBtn.addEventListener("click", () => {
-                    currentIndex = (currentIndex + 1) % images.length;
-                    updateImage();
+                    let newIndex = (currentIndex + 1) % images.length;
+                    updateImage(newIndex);
                 });
 
-                /* Mobile swipe gesture */
+                /* Mobile swipe gesture with smooth transition */
                 let startX = 0;
 
                 slider.addEventListener("touchstart", (e) => {
@@ -351,12 +386,13 @@
                     let diff = endX - startX;
 
                     if (Math.abs(diff) > 50) {
+                        let newIndex = currentIndex;
                         if (diff < 0) {
-                            currentIndex = (currentIndex + 1) % images.length;
+                            newIndex = (currentIndex + 1) % images.length;
                         } else {
-                            currentIndex = (currentIndex - 1 + images.length) % images.length;
+                            newIndex = (currentIndex - 1 + images.length) % images.length;
                         }
-                        updateImage();
+                        updateImage(newIndex);
                     }
                 });
             </script>
@@ -423,9 +459,7 @@
                 </div>
             </section>
 
+            </div>
         </div>
-    </div>
-</body>
-</html>
-
-
+    </body>
+    </html>
