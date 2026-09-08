@@ -144,7 +144,7 @@
         .tem-slider {
             position: relative;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 20px auto 0 auto;
         }
 
         .tem-img-container {
@@ -267,13 +267,13 @@
                     <div class="project-meta">
                         <a href="https://illinois.edu/" target="_blank" style="color:#0066cc; text-decoration:none;">
                             University of Illinois Urbana-Champaign (UIUC)
-                        ], Materials Science and Engineering Department, 2026 - Present
+                        </a>, Materials Science and Engineering Department, 2026 - Present
                     </div>
 
                     <div style="margin-top: 10px;">
                         <a href="https://lasers.llnl.gov/about/keys-to-success/targets" target="_blank" class="nif-link">
                             National Ignition Facility Target Fabrication
-                        ], 2025
+                        </a>, 2025
                     </div>
                 </div>
 
@@ -302,15 +302,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!-- TEM IMAGE SECTION -->
-            <section id="tem-gallery">
-                <h2>TEM Microstructure</h2>
-
+                <!-- IMAGE SLIDER (Moved inside Projects section, title removed) -->
                 <div class="tem-slider" id="slider">
                     <div class="tem-img-container">
-                        <img id="temImage" src="nanoTEM.png" class="tem-img" alt="TEM microstructure">
+                        <img id="temImage" src="nanoTEM.png" class="tem-img" alt="Microstructure and process imagery">
                     </div>
 
                     <button id="prevBtn" class="arrow-btn">&#8249;</button>
@@ -337,6 +333,11 @@
                         caption: `FIB cross-sectional lamella prepared for TEM analysis.
                                   Shows milling quality, interface sharpness, and defect exposure
                                   relevant to microstructure characterization workflows.`
+                    },
+                    {
+                        src: "sputter.png",
+                        caption: `Magnetron sputtering deposition configuration and thin film synthesis setup.
+                                  Represents hardware and process engineering capabilities for advanced materials.`
                     }
                 ];
 
@@ -349,7 +350,6 @@
                 const slider = document.getElementById("slider");
 
                 function updateImage(newIndex) {
-                    // Smooth fade out effect
                     temImage.classList.add("fade-out");
                     temCaption.style.opacity = 0;
 
@@ -358,10 +358,9 @@
                         temImage.src = images[currentIndex].src;
                         temCaption.innerHTML = images[currentIndex].caption;
 
-                        // Fade in effect
                         temImage.classList.remove("fade-out");
                         temCaption.style.opacity = 1;
-                    }, 250); // Matches CSS transition duration
+                    }, 250);
                 }
 
                 prevBtn.addEventListener("click", () => {
@@ -374,7 +373,6 @@
                     updateImage(newIndex);
                 });
 
-                /* Mobile swipe gesture with smooth transition */
                 let startX = 0;
 
                 slider.addEventListener("touchstart", (e) => {
@@ -459,7 +457,7 @@
                 </div>
             </section>
 
-            </div>
         </div>
-    </body>
-    </html>
+    </div>
+</body>
+</html>
