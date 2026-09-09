@@ -53,20 +53,26 @@
             padding-bottom: 8px;
         }
 
-        /* Intro 줄간격 및 여백 축소 */
         .about-text { margin-bottom: 15px; color: #333; line-height: 1.35; }
-        .about-text p { margin-bottom: 6px; }
 
-        /* Hero headline style */
+        /* Hero headline style - 크기를 살짝 줄임 (1.25rem -> 1.15rem) */
         .hero-headline {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             font-weight: 700;
             color: #000;
-            margin-bottom: 12px;
+            margin-bottom: 6px;
             line-height: 1.3;
         }
 
-        /* Project 줄간격 및 여백 축소 */
+        /* Hero second line style */
+        .hero-subhead {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #444;
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+
         .project-item { margin-bottom: 16px; }
 
         .project-title {
@@ -98,7 +104,7 @@
             margin-bottom: 10px;
             font-size: 0.88rem;
             color: #333;
-            line-height: 1.25; /* 줄간격 축소 */
+            line-height: 1.25;
         }
 
         .publication-item em {
@@ -116,7 +122,6 @@
             padding-left: 8px;
         }
 
-        /* Invited Talks 줄간격 및 여백 축소 */
         .talk-item {
             margin-bottom: 10px;
             padding-bottom: 8px;
@@ -178,7 +183,6 @@
         .pub-link { color: #0066cc; text-decoration: none; border-bottom: none; }
         .pub-link:hover { text-decoration: underline; }
 
-        /* TEM slider styling reduced to 2/3 size (max-width: 400px) with smooth fade transition */
         .tem-slider {
             position: relative;
             max-width: 400px;
@@ -213,7 +217,6 @@
             transition: opacity 0.3s ease-in-out;
         }
 
-        /* Gray minimalist arrow buttons adjusted for smaller slider */
         .arrow-btn {
             position: absolute;
             top: 50%;
@@ -287,10 +290,11 @@
 
         <div class="main-content">
 
-            <!-- ABOUT -->
+            <!-- ABOUT / HERO SECTION -->
             <section id="about">
                 <div class="about-text">
                     <p class="hero-headline">I design atoms for the physical world.</p>
+                    <p class="hero-subhead">Postdoctoral Researcher in Materials Science and Engineering at UIUC, previously at Lawrence Livermore National Laboratory. Ph.D. in Nuclear Engineering from Penn State.</p>
                     <p>Hands-on thin-film materials engineer with expertise in sputter deposition, plasma/radiation-assisted processing, failure analysis, and scale-up of 2D-3D materials and high-entropy alloys from R&D to prototype production. Proven track record of leading high-impact projects at a national laboratory (LLNL) and top research universities (UIUC, Stanford, Penn State) on advanced materials for deep tech, including semiconductors, nuclear fusion, and energy storage.</p>
                 </div>
             </section>
@@ -551,3 +555,4 @@
     </div>
 </body>
 </html>
+
