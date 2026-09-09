@@ -179,8 +179,8 @@
         /* SLIDER STYLES */
         .tem-slider {
             position: relative;
-            max-width: 500px;
-            margin: 20px auto 0 auto;
+            max-width: 520px;
+            margin: 25px auto 0 auto;
         }
 
         .tem-slide-container {
@@ -257,8 +257,8 @@
             color: #000;
         }
 
-        #prevBtn { left: -15px; }
-        #nextBtn { right: -15px; }
+        #prevBtn { left: -18px; }
+        #nextBtn { right: -18px; }
 
         @media (max-width: 900px) {
             .wrapper { flex-direction: column; }
@@ -358,12 +358,12 @@
                     </div>
                 </div>
 
-                <!-- SLIDER (FIB & FIBTOP GROUPED) -->
+                <!-- SLIDER (GROUPED RESEARCH DATA) -->
                 <div class="tem-slider" id="slider">
                     <div id="slideContainer" class="tem-slide-container">
-                        <div id="imgGrid" class="img-grid single">
-                            <img id="img1" src="nanoTEM.png" alt="Process Imagery">
-                            <img id="img2" src="" alt="" style="display: none;">
+                        <div id="imgGrid" class="img-grid dual">
+                            <img id="img1" src="Fusion.png" alt="Nuclear Fusion Surface Analysis">
+                            <img id="img2" src="Fusiontem.png" alt="Nuclear Fusion TEM Analysis">
                         </div>
                     </div>
 
@@ -371,14 +371,19 @@
                     <button id="nextBtn" class="arrow-btn">&#8250;</button>
 
                     <p id="temCaption" class="tem-caption">
-                        STEM DF cross-sectional microstructure (200 kV, 7.26 kx). Shows interface quality and defect morphology relevant to <strong>Radiation Defect Engineering in Two-Dimensional Membranes</strong>.
+                        Tungsten plasma-facing material response under high heat flux conditions: Surface morphology deformation (left) paired with cross-sectional TEM microstructural analysis (right).
                     </p>
                 </div>
             </section>
 
             <script>
-                // Slide Data: Grouping FIB and FIBTOP together into a single slide
+                // Slide Data: Grouped images for direct analytical comparison
                 const slides = [
+                    {
+                        type: "dual",
+                        images: ["Fusion.png", "Fusiontem.png"],
+                        caption: `Tungsten plasma-facing material response under high heat flux conditions: Surface morphology deformation (left) paired with cross-sectional TEM microstructural analysis (right).`
+                    },
                     {
                         type: "single",
                         images: ["nanoTEM.png"],
@@ -387,7 +392,12 @@
                     {
                         type: "dual",
                         images: ["FIB.png", "FIBTOP.png"],
-                        caption: `Focused Ion Beam (FIB) dual-view analysis: Cross-sectional lamella preparation for TEM analysis (left) alongside top-view surface morphology characterization (right), displaying milling precision and surface feature evolution.`
+                        caption: `Focused Ion Beam (FIB) dual-view analysis: Cross-sectional lamella preparation for TEM analysis (left) alongside top-view surface morphology characterization (right).`
+                    },
+                    {
+                        type: "dual",
+                        images: ["Raman.png", "XAS.png"],
+                        caption: `Spectroscopic defect analysis: Raman and X-ray absorption spectroscopy (XAS) tracking structural order, strain, and radiation defect evolution in 2D membranes.`
                     },
                     {
                         type: "single",
