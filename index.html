@@ -11,8 +11,8 @@
             background-color: white;
             color: #000;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.4;
-            font-size: 16px;
+            line-height: 1.35;
+            font-size: 15px;
         }
 
         .wrapper {
@@ -22,8 +22,8 @@
         }
 
         .sidebar {
-            width: 250px;
-            padding: 50px 35px;
+            width: 240px;
+            padding: 35px 25px;
             border-right: 1px solid #e0e0e0;
             position: sticky;
             top: 0;
@@ -33,68 +33,66 @@
 
         .main-content {
             flex: 1;
-            padding: 50px 35px;
+            padding: 35px 30px;
         }
 
-        .sidebar-header { margin-bottom: 30px; }
+        .sidebar-header { margin-bottom: 20px; }
 
-        /* Head / Header elements - Black style */
-        h1 { font-size: 1.75rem; margin-bottom: 8px; font-weight: 700; color: #000000; }
+        h1 { font-size: 1.6rem; margin-bottom: 6px; font-weight: 700; color: #000000; }
 
-        .title { font-size: 0.9rem; color: #000000; margin-bottom: 15px; font-weight: 500; }
+        .title { font-size: 0.85rem; color: #000000; margin-bottom: 12px; font-weight: 500; }
 
-        section { margin-bottom: 40px; }
+        section { margin-bottom: 25px; }
 
         h2 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #000000;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 8px;
-        }
-
-        .about-text { margin-bottom: 15px; color: #333; line-height: 1.35; }
-
-        /* Hero headline - Bold and size 1.15rem */
-        .hero-headline {
             font-size: 1.15rem;
             font-weight: 700;
-            color: #000000;
             margin-bottom: 12px;
-            line-height: 1.3;
+            color: #000000;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 5px;
+        }
+
+        .about-text { margin-bottom: 10px; color: #333; line-height: 1.3; }
+
+        .hero-headline {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 8px;
+            line-height: 1.25;
         }
 
         .about-text p {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 400;
             color: #333333;
-            margin-bottom: 12px;
-            line-height: 1.4;
+            margin-bottom: 8px;
+            line-height: 1.35;
         }
 
-        .project-item { margin-bottom: 16px; }
+        .project-item { margin-bottom: 12px; }
 
         .project-title {
-            font-size: 1.05rem;
+            font-size: 0.98rem;
             font-weight: 600;
             color: #000;
-            margin-bottom: 3px;
-            border-left: 3px solid #000;
-            padding-left: 8px;
+            margin-bottom: 2px;
+            border-left: 2px solid #000;
+            padding-left: 6px;
         }
 
         .project-meta {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #666;
-            margin-bottom: 3px;
-            line-height: 1.3;
+            margin-bottom: 2px;
+            line-height: 1.25;
         }
 
         .description {
             color: #333;
-            line-height: 1.35;
-            font-size: 0.95rem;
+            line-height: 1.3;
+            font-size: 0.9rem;
         }
 
         .publication-list {
@@ -103,10 +101,10 @@
         }
 
         .publication-item {
-            margin-bottom: 10px;
-            font-size: 0.88rem;
+            margin-bottom: 6px;
+            font-size: 0.82rem;
             color: #333;
-            line-height: 1.25;
+            line-height: 1.2;
         }
 
         .publication-item em {
@@ -115,61 +113,61 @@
         }
 
         .pub-category-title {
-            font-size: 0.95rem;
+            font-size: 0.88rem;
             font-weight: 600;
             color: #111;
-            margin-top: 18px;
-            margin-bottom: 8px;
-            border-left: 3px solid #000;
-            padding-left: 8px;
+            margin-top: 12px;
+            margin-bottom: 5px;
+            border-left: 2px solid #000;
+            padding-left: 6px;
         }
 
         .talk-item {
-            margin-bottom: 10px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #f0f0f0;
+            margin-bottom: 6px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #f5f5f5;
         }
 
-        .talk-title { font-weight: 600; color: #000; margin-bottom: 2px; line-height: 1.3; }
+        .talk-title { font-weight: 600; color: #000; margin-bottom: 1px; line-height: 1.25; font-size: 0.9rem; }
 
-        .talk-venue { color: #666; font-size: 0.85rem; line-height: 1.3; }
+        .talk-venue { color: #666; font-size: 0.8rem; line-height: 1.25; }
 
         .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-            margin-bottom: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-bottom: 10px;
         }
 
         .skill-card {
             background-color: #fafafa;
-            padding: 20px;
-            border-left: 3px solid #000;
+            padding: 12px 15px;
+            border-left: 2px solid #000;
         }
 
         .skill-card h3 {
-            font-size: 0.95rem;
+            font-size: 0.88rem;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             color: #000;
         }
 
         .skill-card p {
             color: #333;
-            font-size: 0.85rem;
-            line-height: 1.45;
+            font-size: 0.8rem;
+            line-height: 1.35;
         }
 
-        .contact-info { display: flex; gap: 12px; flex-wrap: wrap; }
+        .contact-info { display: flex; gap: 10px; flex-wrap: wrap; }
 
-        .contact-item a { color: #000; text-decoration: none; font-size: 0.9rem; }
+        .contact-item a { color: #000; text-decoration: none; font-size: 0.85rem; }
 
         .address {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #333;
-            line-height: 1.4;
-            margin-top: 15px;
-            padding-top: 15px;
+            line-height: 1.35;
+            margin-top: 12px;
+            padding-top: 12px;
             border-top: 1px solid #e0e0e0;
         }
 
@@ -177,8 +175,6 @@
         a:hover { opacity: 0.7; }
 
         .plain-link { color: #000; text-decoration: none; border-bottom: none; }
-        .plain-link:hover { opacity: 0.7; }
-
         .pi-link { color: #000; text-decoration: none; border-bottom: none; }
         .pi-link:hover { color: #0066cc; }
 
@@ -192,8 +188,8 @@
 
         .tem-slider {
             position: relative;
-            max-width: 400px;
-            margin: 20px auto 0 auto;
+            max-width: 350px;
+            margin: 12px auto 0 auto;
         }
 
         .tem-img-container {
@@ -216,10 +212,10 @@
         }
 
         .tem-caption {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #666;
-            margin-top: 6px;
-            line-height: 1.4;
+            margin-top: 4px;
+            line-height: 1.3;
             text-align: center;
             transition: opacity 0.3s ease-in-out;
         }
@@ -228,19 +224,19 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 300;
             background: rgba(255, 255, 255, 0.7);
             color: #555;
             border: none;
-            width: 35px;
-            height: 35px;
+            width: 30px;
+            height: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             border-radius: 50%;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             transition: 0.2s;
             z-index: 10;
         }
@@ -250,8 +246,8 @@
             color: #000;
         }
 
-        #prevBtn { left: 10px; }
-        #nextBtn { right: 10px; }
+        #prevBtn { left: 8px; }
+        #nextBtn { right: 8px; }
 
         @media (max-width: 900px) {
             .wrapper { flex-direction: column; }
@@ -259,18 +255,18 @@
                 width: 100%;
                 border-right: none;
                 border-bottom: 1px solid #e0e0e0;
-                padding: 35px;
+                padding: 25px;
                 position: static;
                 height: auto;
             }
-            .main-content { padding: 35px; }
-            h2 { font-size: 1.15rem; }
+            .main-content { padding: 25px; }
+            h2 { font-size: 1.05rem; }
             .skills-container { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 600px) {
-            .sidebar { padding: 25px 18px; }
-            .main-content { padding: 25px 18px; }
+            .sidebar { padding: 20px 15px; }
+            .main-content { padding: 20px 15px; }
         }
     </style>
 </head>
@@ -287,7 +283,7 @@
                     <div class="contact-item"><a href="mailto:msseo@illinois.edu">Email</a></div>
                     <div class="contact-item"><a href="https://github.com/minsukseo" target="_blank">GitHub</a></div>
                     <div class="contact-item"><a href="https://www.linkedin.com/in/minsukseo/" target="_blank">LinkedIn</a></div>
-                    <div class="contact-item"><a href="https://scholar.google.com/citations?user=x3t640IAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a></div>
+                    <div class="contact-item"><a href="https://scholar.google.com/citations?user=x3t640IAAAAJ&hl=en&oi=sra" target="_blank">Scholar</a></div>
                 </div>
                 <div class="address">
                     1304 W. Green St. MC 246<br>Urbana, IL 61801
@@ -300,14 +296,9 @@
             <!-- ABOUT / HERO SECTION -->
             <section id="about">
                 <div class="about-text">
-                    <!-- 1st Paragraph: Bold headline (1.15rem) -->
                     <p class="hero-headline">I design atoms for the physical world.</p>
-                    
-                    <!-- 2nd Paragraph: Core background -->
-                    <p>Hands-on thin-film materials engineer with expertise in sputter deposition, plasma/radiation-assisted processing, failure analysis, and scale-up of 2D-3D materials and high-entropy alloys from R&D to prototype production. Proven track record of leading high-impact projects at a national laboratory (LLNL) and top research universities (UIUC, Stanford, Penn State) on advanced materials for deep tech, including semiconductors, nuclear fusion, and energy storage.</p>
-                    
-                    <!-- 3rd Paragraph: Current position & Education (No bold) -->
-                    <p>I am currently a Postdoctoral Researcher in Materials Science and Engineering at the University of Illinois Urbana-Champaign, formerly with Lawrence Livermore National Laboratory. I hold a Ph.D. in Nuclear Engineering from Penn State University.</p>
+                    <p>Hands-on thin-film materials engineer with expertise in sputter deposition, plasma/radiation-assisted processing, failure analysis, and scale-up of 2D-3D materials and high-entropy alloys from R&D to prototype production. Proven track record of leading high-impact projects at LLNL and top research universities (UIUC, Stanford, Penn State) on advanced materials for semiconductors, nuclear fusion, and energy storage.</p>
+                    <p>Postdoctoral Researcher in Materials Science and Engineering at UIUC, formerly at Lawrence Livermore National Laboratory. Ph.D. in Nuclear Engineering from Penn State University.</p>
                 </div>
             </section>
 
@@ -317,49 +308,38 @@
 
                 <div class="project-item">
                     <div class="project-title">High Entropy Alloy Design and Metastable Structures</div>
-
                     <div class="project-meta">
-                        <a href="https://illinois.edu/" target="_blank" class="uiuc-link">University of Illinois Urbana-Champaign (UIUC)</a>, Materials Science and Engineering Department, 2026 - Present
+                        <a href="https://illinois.edu/" target="_blank" class="uiuc-link">UIUC</a>, Materials Science and Engineering Department, 2026 - Present
                     </div>
-                    
-                    <div class="description" style="margin-top: 3px;">
-                        Sputter synthesis of multi-element (ternary, quaternary, and quinary) Ni-based alloys and characterization of ion-irradiation-induced microstructural modifications (PI: Prof. <a href="https://matse.illinois.edu/people/profile/mcharp" target="_blank" class="pi-link">Marie Charpagne</a>).
+                    <div class="description" style="margin-top: 2px;">
+                        Sputter synthesis of multi-element Ni-based alloys and characterization of ion-irradiation-induced microstructural modifications (PI: Prof. <a href="https://matse.illinois.edu/people/profile/mcharp" target="_blank" class="pi-link">Marie Charpagne</a>). Routine site-specific FIB preparation (<a href="https://mrl.illinois.edu/facilities/equipment/thermo-scios2-dual-beam-semfib" target="_blank" class="pub-link">Scios 2</a>, <a href="https://mrl.illinois.edu/facilities/equipment/fei-helios-600i-dual-beam-semfib" target="_blank" class="pub-link">Helios</a>) and advanced TEM operation (<a href="https://mrl.illinois.edu/facilities/equipment/ThermoFisher-Scientific-TalosF200X-G2" target="_blank" class="pub-link">Talos F200X G2</a>) for defect analysis.
                     </div>
-                    
-                    <div class="description" style="margin-top: 3px;">
-                        Conduct routine site-specific sample preparation using focused ion beam (FIB, <a href="https://mrl.illinois.edu/facilities/equipment/thermo-scios2-dual-beam-semfib" target="_blank" class="pub-link">Scios 2</a> and <a href="https://mrl.illinois.edu/facilities/equipment/fei-helios-600i-dual-beam-semfib" target="_blank" class="pub-link">Helios DualBeam</a>) and operate advanced transmission electron microscope (TEM, <a href="https://mrl.illinois.edu/facilities/equipment/ThermoFisher-Scientific-TalosF200X-G2" target="_blank" class="pub-link">Talos F200X G2</a>) for in-depth microstructural and defect analysis.
-                    </div>
-
-                    <div style="margin-top: 10px;">
+                    <div style="margin-top: 6px;">
                         <div class="project-meta">
-                            <a href="https://lasers.llnl.gov/about/keys-to-success/targets" target="_blank" class="nif-link">National Ignition Facility (NIF) target fabrication</a>, LLNL, 2025
+                            <a href="https://lasers.llnl.gov/about/keys-to-success/targets" target="_blank" class="nif-link">NIF target fabrication</a>, LLNL, 2025
                         </div>
-                        <div class="description" style="margin-top: 2px;">
-                            Coauthored work (PI: Dr. <a href="https://people.llnl.gov/kucheyev1" target="_blank" class="pi-link">Sergei Kucheyev</a>) with researchers at <a href="https://bluelaserfusion.com/" target="_blank" class="pub-link">Blue Laser Fusion Inc.</a>, founded by Prof. <a href="https://en.wikipedia.org/wiki/Shuji_Nakamura" target="_blank" class="pi-link">Shuji Nakamura</a> (2014 Nobel Laureate in Physics), focusing on advanced material integration for fusion energy systems. Contributed to the PVD sputter deposition of boron carbide and rare-earth high-entropy alloy thin films, driving surface defect characterization and process optimization to enhance film quality and scalability.
+                        <div class="description" style="margin-top: 1px;">
+                            Coauthored work (PI: Dr. <a href="https://people.llnl.gov/kucheyev1" target="_blank" class="pi-link">Sergei Kucheyev</a>) with <a href="https://bluelaserfusion.com/" target="_blank" class="pub-link">Blue Laser Fusion Inc.</a> (Prof. <a href="https://en.wikipedia.org/wiki/Shuji_Nakamura" target="_blank" class="pi-link">Shuji Nakamura</a>) on advanced material integration for fusion energy, focusing on PVD sputter deposition of boron carbide and rare-earth high-entropy alloy thin films.
                         </div>
                     </div>
                 </div>
 
                 <div class="project-item">
                     <div class="project-title">Radiation Defect Engineering in Two-Dimensional Membranes</div>
-
                     <div class="project-meta">
-                        <a href="https://www.llnl.gov/" target="_blank" class="llnl-link">Lawrence Livermore National Laboratory (LLNL)</a>, Materials Science Division, 2022 - 2025
+                        <a href="https://www.llnl.gov/" target="_blank" class="llnl-link">LLNL</a>, Materials Science Division, 2022 - 2025
                     </div>
-
                     <div class="description" style="margin-top: 2px;">
-                        Conducted LDRD project in collaboration with the research group of Prof. <a href="https://profiles.stanford.edu/steve-chu" target="_blank" class="pi-link">Steven Chu</a> (1997 Nobel Laureate in Physics) at Stanford University on advanced two-dimensional Li-battery materials research. Spearheaded wafer-scale thin film growth of hexagonal boron nitride (h-BN), handling nearly 100 batches and over 1,000 samples spanning thicknesses from 10 nm to 1 µm. Optimized magnetron sputter deposition processes (temperature, gas pressure, and bias voltage) alongside ion bombardment using an ion accelerator to systematically tune structural characteristics, successfully reducing crystallinity metrics from 100 down to 30.
+                        Conducted LDRD project in collaboration with Prof. <a href="https://profiles.stanford.edu/steve-chu" target="_blank" class="pi-link">Steven Chu</a> (1997 Nobel Laureate) at Stanford on 2D Li-battery materials. Spearheaded wafer-scale thin film growth of h-BN (~100 batches, >1,000 samples, 10 nm–1 µm). Optimized magnetron sputter deposition processes (temperature, gas pressure, bias voltage) alongside ion bombardment using an ion accelerator <a href="https://doi.org/10.1016/j.scriptamat.2025.116756" target="_blank" class="pub-link">[paper 1]</a> <a href="https://doi.org/10.1021/acsami.5c25472" target="_blank" class="pub-link">[paper 2]</a> to systematically tune structural characteristics, successfully reducing crystallinity metrics from 100 down to 30.
                     </div>
                 </div>
 
                 <div class="project-item">
                     <div class="project-title">Nuclear Fusion Materials in Extreme Environments</div>
-
                     <div class="project-meta">
-                        <a href="https://www.psu.edu/" target="_blank" class="psu-link">Pennsylvania State University</a>, Nuclear Engineering Department, 2022
+                        <a href="https://www.psu.edu/" target="_blank" class="psu-link">Penn State</a>, Nuclear Engineering Department, 2022
                     </div>
-
-                    <div class="description" style="margin-top: 3px;">
+                    <div class="description" style="margin-top: 2px;">
                         Investigated microstructural evolution, surface oxidation, and nanomechanical degradation of tungsten-based materials under high heat flux and extreme plasma-material interaction environments (PI: Prof. <a href="https://www.sunymaritime.edu/faculty/engineering/leigh-winfrey" target="_blank" class="pi-link">Leigh Winfrey</a>).
                     </div>
                 </div>
@@ -367,16 +347,12 @@
                 <!-- IMAGE SLIDER -->
                 <div class="tem-slider" id="slider">
                     <div class="tem-img-container">
-                        <img id="temImage" src="nanoTEM.png" class="tem-img" alt="Microstructure and process imagery">
+                        <img id="temImage" src="nanoTEM.png" class="tem-img" alt="Microstructure imagery">
                     </div>
-
                     <button id="prevBtn" class="arrow-btn">&#8249;</button>
                     <button id="nextBtn" class="arrow-btn">&#8250;</button>
-
                     <p id="temCaption" class="tem-caption">
-                        STEM DF cross-sectional microstructure (200 kV, 7.26 kx).  
-                        Shows interface quality and defect morphology relevant to  
-                        <strong>Radiation Defect Engineering in Two-Dimensional Membranes</strong>.
+                        STEM DF cross-sectional microstructure (200 kV, 7.26 kx) relevant to <strong>Radiation Defect Engineering</strong>.
                     </p>
                 </div>
             </section>
@@ -385,25 +361,19 @@
                 const images = [
                     {
                         src: "nanoTEM.png",
-                        caption: `STEM DF cross-sectional microstructure (200 kV, 7.26 kx).
-                                    Shows interface quality and defect morphology relevant to
-                                    Radiation Defect Engineering in Two-Dimensional Membranes.`
+                        caption: `STEM DF cross-sectional microstructure (200 kV, 7.26 kx) relevant to Radiation Defect Engineering.`
                     },
                     {
                         src: "FIB.png",
-                        caption: `FIB cross-sectional lamella prepared for TEM analysis.
-                                    Shows milling quality, interface sharpness, and defect exposure
-                                    relevant to microstructure characterization workflows.`
+                        caption: `FIB cross-sectional lamella prepared for TEM analysis, showing interface sharpness and defect exposure.`
                     },
                     {
                         src: "sputter.png",
-                        caption: `Magnetron sputtering deposition configuration and thin film synthesis setup.
-                                    Represents hardware and process engineering capabilities for advanced materials.`
+                        caption: `Magnetron sputtering deposition configuration and thin film synthesis setup.`
                     }
                 ];
 
                 let currentIndex = 0;
-
                 const temImage = document.getElementById("temImage");
                 const temCaption = document.getElementById("temCaption");
                 const prevBtn = document.getElementById("prevBtn");
@@ -413,45 +383,24 @@
                 function updateImage(newIndex) {
                     temImage.classList.add("fade-out");
                     temCaption.style.opacity = 0;
-
                     setTimeout(() => {
                         currentIndex = newIndex;
                         temImage.src = images[currentIndex].src;
                         temCaption.innerHTML = images[currentIndex].caption;
-
                         temImage.classList.remove("fade-out");
                         temCaption.style.opacity = 1;
-                    }, 250);
+                    }, 200);
                 }
 
-                prevBtn.addEventListener("click", () => {
-                    let newIndex = (currentIndex - 1 + images.length) % images.length;
-                    updateImage(newIndex);
-                });
-
-                nextBtn.addEventListener("click", () => {
-                    let newIndex = (currentIndex + 1) % images.length;
-                    updateImage(newIndex);
-                });
+                prevBtn.addEventListener("click", () => updateImage((currentIndex - 1 + images.length) % images.length));
+                nextBtn.addEventListener("click", () => updateImage((currentIndex + 1) % images.length));
 
                 let startX = 0;
-
-                slider.addEventListener("touchstart", (e) => {
-                    startX = e.touches[0].clientX;
-                });
-
+                slider.addEventListener("touchstart", (e) => startX = e.touches[0].clientX);
                 slider.addEventListener("touchend", (e) => {
-                    let endX = e.changedTouches[0].clientX;
-                    let diff = endX - startX;
-
-                    if (Math.abs(diff) > 50) {
-                        let newIndex = currentIndex;
-                        if (diff < 0) {
-                            newIndex = (currentIndex + 1) % images.length;
-                        } else {
-                            newIndex = (currentIndex - 1 + images.length) % images.length;
-                        }
-                        updateImage(newIndex);
+                    let diff = e.changedTouches[0].clientX - startX;
+                    if (Math.abs(diff) > 40) {
+                        updateImage(diff < 0 ? (currentIndex + 1) % images.length : (currentIndex - 1 + images.length) % images.length);
                     }
                 });
             </script>
@@ -463,54 +412,54 @@
                 <div class="pub-category-title">LLNL – Chu group collaboration</div>
                 <ul class="publication-list">
                     <li class="publication-item">
-                        <strong>Minsuk Seo*</strong>, L. Bimo Bayu Aji, Luis A. Zepeda-Luiz, Sang Cheol Kim, Yan-Kai Tzeng, Steven Chu, Sergei O. Kucheyev, “Dynamics of radiation damage buildup in ultrathin hexagonal boron nitride under ion irradiation” <em>ACS Applied Materials & Interfaces</em> (2026). <a href="https://doi.org/10.1021/acsami.5c25472" target="_blank" class="pub-link">doi.org/10.1021/acsami.5c25472</a>
+                        <strong>Minsuk Seo*</strong> et al., “Dynamics of radiation damage buildup in ultrathin hexagonal boron nitride under ion irradiation” <em>ACS Appl. Mater. Interfaces</em> (2026). <a href="https://doi.org/10.1021/acsami.5c25472" target="_blank" class="pub-link">doi</a>
                     </li>
                     <li class="publication-item">
-                        <strong>Minsuk Seo*</strong>, L. Bimo Bayu Aji, Sang Cheol Kim, Yan-Kai Tzeng, Alexander A. Baker, Finnian M. O’Neill, Steven Chu, Sergei O. Kucheyev, “Damage buildup in multilayer hexagonal boron nitride films under Ar ion bombardment” <em>Scripta Materialia</em> 265, 116756 (2025). <a href="https://doi.org/10.1016/j.scriptamat.2025.116756" target="_blank" class="pub-link">doi.org/10.1016/j.scriptamat.2025.116756</a>
+                        <strong>Minsuk Seo*</strong> et al., “Damage buildup in multilayer hexagonal boron nitride films under Ar ion bombardment” <em>Scripta Mater.</em> 265, 116756 (2025). <a href="https://doi.org/10.1016/j.scriptamat.2025.116756" target="_blank" class="pub-link">doi</a>
                     </li>
                 </ul>
 
                 <div class="pub-category-title">LLNL</div>
                 <ul class="publication-list">
                     <li class="publication-item">
-                        James B. Merlo, <strong>Minsuk Seo</strong>, Koki Kawasaki, Liam R. Sohngen, L. Bimo Bayu Aji, Swanee J. Shin, Gregory V. Taylor, Sergei O. Kucheyev, “Effects of discharge power for magnetron sputter deposition of boron carbide films on tilted substrates” <em>Journal of Applied Physics</em> (2026). <a href="https://doi.org/10.1063/5.0317058" target="_blank" class="pub-link">doi.org/10.1063/5.0317058</a>
+                        J. B. Merlo, <strong>Minsuk Seo</strong> et al., “Effects of discharge power for magnetron sputter deposition of boron carbide films on tilted substrates” <em>J. Appl. Phys.</em> (2026). <a href="https://doi.org/10.1063/5.0317058" target="_blank" class="pub-link">doi</a>
                     </li>
                     <li class="publication-item">
-                        Matthew S. Wong, Gregory V. Taylor, <strong>Minsuk Seo</strong>, L. R. Sohngen, James B. Merlo, L. Bimo Bayu Aji, Swanee J. Shin, Shuji Nakamura, Sergei O. Kucheyev, “Effects of hydrogen on sputter-deposited boron carbide films” <em>Journal of Applied Physics</em> 137(19) 095301 (2025). <a href="https://doi.org/10.1063/5.0272124" target="_blank" class="pub-link">doi.org/10.1063/5.0272124</a>
+                        M. S. Wong, G. V. Taylor, <strong>Minsuk Seo</strong> et al., “Effects of hydrogen on sputter-deposited boron carbide films” <em>J. Appl. Phys.</em> 137(19) 095301 (2025). <a href="https://doi.org/10.1063/5.0272124" target="_blank" class="pub-link">doi</a>
                     </li>
                     <li class="publication-item">
-                        Wenyu Sun, <strong>Minsuk Seo</strong>, L. Bimo Bayu Aji, Gregory V. Taylor, Alexander A. Baker, Sergei O. Kucheyev, Liwen F. Wan, “First-Principles simulations correlating X-ray absorption spectroscopy features to point defects in h-BN” <em>The Journal of Physical Chemistry Letters</em> 16, 16 (2025): 3926-3931. <a href="https://doi.org/10.1021/acs.jpclett.5c00768" target="_blank" class="pub-link">doi.org/10.1021/acs.jpclett.5c00768</a>
+                        W. Sun, <strong>Minsuk Seo</strong> et al., “First-Principles simulations correlating X-ray absorption spectroscopy features to point defects in h-BN” <em>J. Phys. Chem. Lett.</em> 16 (2025): 3926-3931. <a href="https://doi.org/10.1021/acs.jpclett.5c00768" target="_blank" class="pub-link">doi</a>
                     </li>
                     <li class="publication-item">
-                        Koki Kawasaki, James B. Merlo, Stephanie Gonzalez, L. Bimo Bayu Aji, Swanee J. Shin, Gregory V. Taylor, Alison M. Engwall, <strong>Minsuk Seo</strong>, Alex A. Baker, Matthew S. Wong, Finnian M. O’Neill, Sergei O. Kucheyev, “High-rate magnetron sputter deposition of low-stress boron carbide films on tilted substrates” <em>Journal of Applied Physics</em> 138(10) 105302 (2025). <a href="https://doi.org/10.1063/5.0283657" target="_blank" class="pub-link">doi.org/10.1063/5.0283657</a>
+                        K. Kawasaki, ..., <strong>Minsuk Seo</strong> et al., “High-rate magnetron sputter deposition of low-stress boron carbide films on tilted substrates” <em>J. Appl. Phys.</em> 138(10) 105302 (2025). <a href="https://doi.org/10.1063/5.0283657" target="_blank" class="pub-link">doi</a>
                     </li>
                     <li class="publication-item">
-                        <strong>Minsuk Seo</strong>, James B. Merlo, Liam R. Sohngen, L. Bimo Bayu Aji, Jessica Bober, Qi Rong Yang, Gregory V. Taylor, Sergei O. Kucheyev, “Ion bombardment tailoring of stress and tensile strength in sputter deposited boron carbide” (2026, under review).
+                        <strong>Minsuk Seo</strong> et al., “Ion bombardment tailoring of stress and tensile strength in sputter deposited boron carbide” (2026, under review).
                     </li>
                     <li class="publication-item">
-                        James B. Merlo, Jessica Bober, <strong>Minsuk Seo</strong>, Liam R. Sohngen, Qi Rong Yang, Gregory V. Taylor, Sergei O. Kucheyev, “Intrinsic stress and stiffness of boron carbide films” (2026, under review).
+                        J. B. Merlo, ..., <strong>Minsuk Seo</strong> et al., “Intrinsic stress and stiffness of boron carbide films” (2026, under review).
                     </li>
                     <li class="publication-item">
-                        Cheng-Da Tu, Chih-Chieh Chang, Wei-Jie Hsu, Yong-Ji Chen, Jen-Inn Chyi, Chien-Ting Wu, Kun-Lin Lin, <strong>Minsuk Seo</strong>, Augustinas Galeckas, Yun-Chorng Chang, Andrej Kuznetsov, “Overcoming p-channel transistor performance asymmetry with ultrahigh conductance two-dimensional hole gas at the boron nitride/silicon interface” (2026, submitted).
+                        C.-D. Tu, ..., <strong>Minsuk Seo</strong> et al., “Overcoming p-channel transistor performance asymmetry with ultrahigh conductance 2D hole gas at h-BN/Si interface” (2026, submitted).
                     </li>
                 </ul>
 
                 <div class="pub-category-title">Penn State</div>
                 <ul class="publication-list">
                     <li class="publication-item">
-                        <strong>Minsuk Seo*</strong>, Shukai Yu, Venkatraman Gopalan, A. Leigh Winfrey, “Observations on macroscopic surface modification and oxidation of tungsten and tungsten carbide in laser focus in air” <em>Fusion Science and Technology</em> (2025): 1-6. <a href="https://doi.org/10.1080/15361055.2024.2343972" target="_blank" class="pub-link">doi.org/10.1080/15361055.2024.2343972</a>
+                        <strong>Minsuk Seo*</strong> et al., “Observations on macroscopic surface modification and oxidation of tungsten and tungsten carbide in laser focus in air” <em>Fusion Sci. Technol.</em> (2025). <a href="https://doi.org/10.1080/15361055.2024.2343972" target="_blank" class="pub-link">doi</a>
                     </li>
                     <li class="publication-item">
-                        <strong>Minsuk Seo*</strong>, A. Leigh Winfrey, “Microstructural modification of highly porous resolidified tungsten in heat flux of 46.3GW/m2 and focused ion beam” <em>Fusion Engineering and Design</em> (2024): 114206. <a href="https://doi.org/10.1016/j.jnucmat.2022.153725" target="_blank" class="pub-link">doi.org/10.1016/j.jnucmat.2022.153725</a>
+                        <strong>Minsuk Seo*</strong> et al., “Microstructural modification of highly porous resolidified tungsten in heat flux of 46.3GW/m2 and focused ion beam” <em>Fusion Eng. Des.</em> (2024): 114206. <a href="https://doi.org/10.1016/j.jnucmat.2022.153725" target="_blank" class="pub-link">doi</a>
                     </li>
                     <li class="publication-item">
-                        <strong>Minsuk Seo*</strong>, Ke Wang, John R. Echols, A. Leigh Winfrey, “Microstructure deformation and near-pore environment of resolidified tungsten in high heat flux conditions” <em>Journal of Nuclear Materials</em> (2022): 153725. <a href="https://doi.org/10.1016/j.jnucmat.2022.153725" target="_blank" class="pub-link">doi.org/10.1016/j.jnucmat.2022.153725</a>
+                        <strong>Minsuk Seo*</strong> et al., “Microstructure deformation and near-pore environment of resolidified tungsten in high heat flux conditions” <em>J. Nucl. Mater.</em> (2022): 153725. <a href="https://doi.org/10.1016/j.jnucmat.2022.153725" target="_blank" class="pub-link">doi</a>
                     </li>
                     <li class="publication-item">
-                        <strong>Minsuk Seo*</strong>, “Assessment of the maximum temperature of simplified high heat radioactive glass in interim storage and deep geological disposal” <em>Nuclear Technology</em> 207 (2021): 1902-1912. <a href="https://doi.org/10.1080/00295450.2020.1860614" target="_blank" class="pub-link">doi.org/10.1080/00295450.2020.1860614</a>
+                        <strong>Minsuk Seo*</strong>, “Assessment of maximum temperature of simplified high heat radioactive glass in interim storage and deep geological disposal” <em>Nucl. Technol.</em> 207 (2021): 1902-1912. <a href="https://doi.org/10.1080/00295450.2020.1860614" target="_blank" class="pub-link">doi</a>
                     </li>
                     <li class="publication-item">
-                        <strong>Minsuk Seo*</strong>, John R. Echols, A. Leigh Winfrey, “Morphological and nanomechanical changes in tungsten in high heat flux conditions” <em>npj Materials Degradation</em> 4.1 (2020): 1-8. <a href="https://doi.org/10.1038/s41529-020-00135-4" target="_blank" class="pub-link">doi.org/10.1038/s41529-020-00135-4</a>
+                        <strong>Minsuk Seo*</strong> et al., “Morphological and nanomechanical changes in tungsten in high heat flux conditions” <em>npj Mater. Degrad.</em> 4.1 (2020): 1-8. <a href="https://doi.org/10.1038/s41529-020-00135-4" target="_blank" class="pub-link">doi</a>
                     </li>
                 </ul>
             </section>
@@ -518,61 +467,39 @@
             <!-- INVITED TALKS -->
             <section id="invited-talks">
                 <h2>Invited Talks</h2>
-
                 <div class="talk-item">
                     <div class="talk-title">2D-3D Thin Film Processing for Advanced Nuclear Energy Applications</div>
-                    <div class="talk-venue">The School of Chemical Engineering, Oklahoma State University, OK, April 9, 2026</div>
+                    <div class="talk-venue">Oklahoma State University, OK, April 9, 2026</div>
                 </div>
-
                 <div class="talk-item">
                     <div class="talk-title">2D-3D Materials for Advanced Nuclear Energy Systems</div>
-                    <div class="talk-venue">Department of Physics, University of South Florida, FL, March 9, 2026 — <a href="https://www.instagram.com/p/DVi_Xd5DhJS/" target="_blank">Event</a></div>
+                    <div class="talk-venue">University of South Florida, FL, March 9, 2026 — <a href="https://www.instagram.com/p/DVi_Xd5DhJS/" target="_blank">Event</a></div>
                 </div>
-
                 <div class="talk-item">
                     <div class="talk-title">2D-3D Materials for Advanced Nuclear Energy Systems</div>
-                    <div class="talk-venue">Department of Materials Science and Engineering, University of Texas at Dallas, TX, February 18, 2026</div>
+                    <div class="talk-venue">University of Texas at Dallas, TX, February 18, 2026</div>
                 </div>
             </section>
 
             <!-- SKILLS -->
             <section id="technical-skills">
                 <h2>Technical Skills</h2>
-
                 <div class="skills-container">
                     <div class="skill-card">
-                        <h3>Thin Film Growth & 2D Materials</h3>
-                        <p>10nm to ~100µm wafer-scale film, DC/RF magnetron sputtering, PVD, Vacuum systems, Multilayer/scale-up coating development. Hexagonal boron nitride, High entropy alloy (Ni-Cr-Co-Fe-Cu), Rare-earth element, Boron carbide</p>
+                        <h3>Thin Film & 2D Materials</h3>
+                        <p>10nm–100µm film, DC/RF magnetron sputtering, PVD, Vacuum systems, h-BN, High-entropy alloy (Ni-Cr-Co-Fe-Cu), Rare-earth, Boron carbide</p>
                     </div>
-
-                    <div class="skill-card">
-                        <h3>Advanced Materials</h3>
-                        <p>2D hexagonal boron nitride, High-entropy alloys, Refractory and nuclear materials</p>
-                    </div>
-
                     <div class="skill-card">
                         <h3>Materials Reliability</h3>
-                        <p>Radiation damage (Ion accelerator), Defect evolution, degradation mechanism in extreme environment</p>
+                        <p>Radiation damage (Ion accelerator), Defect evolution, extreme environment degradation</p>
                     </div>
-
                     <div class="skill-card">
-                        <h3>Surface Engineering</h3>
-                        <p>Plasma etching, sputtering, laser ablation</p>
+                        <h3>Surface Engineering & Process</h3>
+                        <p>Plasma etching, sputtering, laser ablation, Experimental design, DOE, optimization</p>
                     </div>
-
-                    <div class="skill-card">
-                        <h3>Process Development</h3>
-                        <p>Experimental design, process optimization, parameter studies, reproducibility, DOE</p>
-                    </div>
-
                     <div class="skill-card">
                         <h3>Metrology & Characterization</h3>
-                        <p>AFM, Vickers & nanoindentation, DTA, TMA, Confocal laser microscopy, profilometry, UV-Vis, Raman, FTIR, XRD, XRF, NMR, EPR, SEM/EDS, FIB milling, TEM operation and microphotography, Rutherford Backscattering Spectrometer, Plasma diagnostics (Langmuir probe, ion mass spectrometer, OES, RGA)</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Post-Treatment</h3>
-                        <p>High Temperature Furnace (~1500°C), Glass quench-synthesis, Corrosion test, TEM sample preparation, Oxidation, Annealing</p>
+                        <p>AFM, Nanoindentation, Raman, XRD, XRF, SEM/EDS, FIB milling, TEM & microphotography, RBS, Plasma diagnostics (Langmuir, OES, RGA)</p>
                     </div>
                 </div>
             </section>
