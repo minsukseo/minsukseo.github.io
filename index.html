@@ -13,6 +13,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.4;
             font-size: 16px;
+            text-align: center;
         }
 
         .wrapper {
@@ -29,23 +30,25 @@
             top: 0;
             height: 100vh;
             overflow-y: auto;
+            text-align: center;
         }
 
         .main-content {
             flex: 1;
             padding: 50px 35px;
+            text-align: center;
         }
 
-        .sidebar-header { margin-bottom: 30px; }
+        .sidebar-header { margin-bottom: 30px; text-align: center; }
 
-        h1 { font-size: 1.75rem; margin-bottom: 8px; font-weight: 700; color: #000000; }
-        .title { font-size: 0.9rem; color: #000000; margin-bottom: 15px; font-weight: 500; }
+        h1 { font-size: 1.75rem; margin-bottom: 8px; font-weight: 700; color: #000000; text-align: center; }
+        .title { font-size: 0.9rem; color: #000000; margin-bottom: 15px; font-weight: 500; text-align: center; }
 
-        /* ===== 섹션 간격 축소 ===== */
+        /* ===== 섹션 간격 ===== */
         section { margin-bottom: 25px; }
         #about { margin-bottom: 15px; }
-        /* ========================= */
 
+        /* ===== h2 간격 ===== */
         h2 {
             font-size: 1.3rem;
             font-weight: 700;
@@ -53,10 +56,11 @@
             color: #000000;
             border-bottom: 2px solid #f0f0f0;
             padding-bottom: 6px;
+            text-align: center;
         }
 
-        /* ===== About 섹션 글간격 축소 ===== */
-        .about-text { margin-bottom: 10px; color: #333; line-height: 1.25; }
+        /* ===== About 섹션 ===== */
+        .about-text { margin-bottom: 10px; color: #333; line-height: 1.25; text-align: center; }
 
         .hero-headline {
             font-size: 1.15rem;
@@ -64,6 +68,7 @@
             color: #000000;
             margin-bottom: 8px;
             line-height: 1.25;
+            text-align: center;
         }
 
         .about-text p {
@@ -72,10 +77,10 @@
             color: #333333;
             margin-bottom: 8px;
             line-height: 1.25;
+            text-align: center;
         }
-        /* ================================ */
 
-        .project-item { margin-bottom: 16px; }
+        .project-item { margin-bottom: 16px; text-align: center; }
 
         .project-title {
             font-size: 1.05rem;
@@ -84,6 +89,7 @@
             margin-bottom: 3px;
             border-left: 3px solid #000;
             padding-left: 8px;
+            text-align: center;
         }
 
         .project-meta {
@@ -91,17 +97,20 @@
             color: #666;
             margin-bottom: 3px;
             line-height: 1.3;
+            text-align: center;
         }
 
         .description {
             color: #333;
             line-height: 1.35;
             font-size: 0.95rem;
+            text-align: center;
         }
 
         .publication-list {
             list-style: none;
             padding-left: 0;
+            text-align: center;
         }
 
         .publication-item {
@@ -109,6 +118,7 @@
             font-size: 0.88rem;
             color: #333;
             line-height: 1.25;
+            text-align: center;
         }
 
         .publication-item em {
@@ -124,27 +134,31 @@
             margin-bottom: 8px;
             border-left: 3px solid #000;
             padding-left: 8px;
+            text-align: center;
         }
 
-        /* ===== Invited Talks 스타일 ===== */
+        /* ===== Invited Talks ===== */
         .talk-item {
             margin-bottom: 10px;
+            text-align: center;
         }
 
-        .talk-title { font-size: 0.95rem; font-weight: 600; color: #000; margin-bottom: 2px; line-height: 1.3; }
-        .talk-venue { color: #666; font-size: 0.85rem; line-height: 1.3; }
+        .talk-title { font-size: 0.95rem; font-weight: 600; color: #000; margin-bottom: 2px; line-height: 1.3; text-align: center; }
+        .talk-venue { color: #666; font-size: 0.85rem; line-height: 1.3; text-align: center; }
 
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 20px;
             margin-bottom: 15px;
+            text-align: center;
         }
 
         .skill-card {
             background-color: #fafafa;
             padding: 20px;
             border-left: 3px solid #000;
+            text-align: center;
         }
 
         .skill-card h3 {
@@ -152,16 +166,18 @@
             font-weight: 600;
             margin-bottom: 10px;
             color: #000;
+            text-align: center;
         }
 
         .skill-card p {
             color: #333;
             font-size: 0.85rem;
             line-height: 1.45;
+            text-align: center;
         }
 
-        .contact-info { display: flex; gap: 12px; flex-wrap: wrap; }
-        .contact-item a { color: #000; text-decoration: none; font-size: 0.9rem; }
+        .contact-info { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; text-align: center; }
+        .contact-item a { color: #000; text-decoration: none; font-size: 0.9rem; text-align: center; }
 
         .address {
             font-size: 0.8rem;
@@ -170,6 +186,7 @@
             margin-top: 15px;
             padding-top: 15px;
             border-top: 1px solid #e0e0e0;
+            text-align: center;
         }
 
         a { color: #000; text-decoration: none; border-bottom: none; }
@@ -186,6 +203,7 @@
             position: relative;
             max-width: 520px;
             margin: 25px auto 0 auto;
+            text-align: center;
         }
 
         .tem-slide-container {
